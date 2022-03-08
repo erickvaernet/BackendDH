@@ -5,8 +5,10 @@ public class Cancion {
     private String arista;
     private String genero;
 
-    public Cancion(String nombre) {
+    public Cancion(String nombre, String arista, String genero) {
         this.nombre = nombre;
+        this.arista = arista;
+        this.genero = genero;
     }
 
     public String getNombre() {

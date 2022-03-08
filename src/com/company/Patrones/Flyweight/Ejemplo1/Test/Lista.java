@@ -8,12 +8,14 @@ public class Lista {
 
     private static final HashMap<String, Cancion> cancionesMap = new HashMap();
 
-    public static Cancion getCancion(String nombreCancion){
-        Cancion cancion = cancionesMap.get(nombreCancion);
+    public static Cancion getCancion(String nombre, String artista, String genero){
+        String clave = nombre+artista+genero;
+        Cancion cancion = cancionesMap.get(clave);
         if(cancion==null){
-            cancion= new Cancion(nombreCancion);
-            cancionesMap.put(nombreCancion,cancion);
-            System.out.println("Se creo la cancion = " + cancion);
+            cancion= new Cancion(nombre,artista,genero);
+            clave= nombre+artista+genero;
+            cancionesMap.put(clave,cancion);
+            System.out.println("Se creo la cancion = Nombre:" + cancion.getNombre()+", Artista:"+ cancion.getArista()+", Genero:"+cancion.getGenero());
         }
         return cancion;
     }

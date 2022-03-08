@@ -1,22 +1,20 @@
 package com.company.Patrones.Flyweight.Ejemplo1.Test;
 
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class ListaTest {
 
-    public static Cancion c1;
-    public static Cancion c2;
+    public  Cancion c1;
+    public  Cancion c2;
 
-    @BeforeAll
-    public static void BeforeTest() {
-        c1= Lista.getCancion("cancion1");
-        c1.setArista("artista1");
-        c1.setGenero("Rock Nacional");
-
-        c2= Lista.getCancion(c1.getNombre());
+    @BeforeEach
+    public void BeforeTest() {
+        c1= Lista.getCancion("cancion1","artista1","genero1");
+        c2= Lista.getCancion(c1.getNombre(),c1.getArista(),c1.getGenero());
     }
 
     @Test
