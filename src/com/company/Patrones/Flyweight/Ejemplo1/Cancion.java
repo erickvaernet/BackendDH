@@ -1,4 +1,4 @@
-package com.company.Patrones.Flyweight.Ejemplo1.Test;
+package com.company.Patrones.Flyweight.Ejemplo1;
 
 public class Cancion {
     private String nombre;

@@ -1,6 +1,4 @@
-package com.company.Patrones.Flyweight.Ejemplo1.Test;
-
-import com.company.Patrones.Flyweight.Ejemplo1.Test.Cancion;
+package com.company.Patrones.Flyweight.Ejemplo1;
 
 import java.util.HashMap;
 

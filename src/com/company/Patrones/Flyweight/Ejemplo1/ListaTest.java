@@ -1,6 +1,5 @@
-package com.company.Patrones.Flyweight.Ejemplo1.Test;
+package com.company.Patrones.Flyweight.Ejemplo1;
 
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
