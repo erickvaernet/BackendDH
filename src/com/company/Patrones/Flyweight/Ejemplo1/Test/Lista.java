@@ -1,10 +1,12 @@
-package com.company.Patrones.Flyweight;
+package com.company.Patrones.Flyweight.Ejemplo1.Test;
+
+import com.company.Patrones.Flyweight.Ejemplo1.Test.Cancion;
 
 import java.util.HashMap;
 
 public class Lista {
 
-    private static final HashMap<String,Cancion> cancionesMap = new HashMap();
+    private static final HashMap<String, Cancion> cancionesMap = new HashMap();
 
     public static Cancion getCancion(String nombreCancion){
         Cancion cancion = cancionesMap.get(nombreCancion);

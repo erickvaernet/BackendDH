@@ -1,7 +1,5 @@
-package com.company.Patrones.Flyweight.Test;
+package com.company.Patrones.Flyweight.Ejemplo1.Test;
 
-import com.company.Patrones.Flyweight.Cancion;
-import com.company.Patrones.Flyweight.Lista;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
