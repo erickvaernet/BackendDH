@@ -1,0 +1,21 @@
+[2022-03-09 12-17-17] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-17] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-17] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-17] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-17] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-17-33] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-33] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-33] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-33] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-33] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-17-41] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-41] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-41] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-41] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-41] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
