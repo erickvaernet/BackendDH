@@ -19,3 +19,52 @@ java.lang.ArithmeticException: / by zero
 [2022-03-09 12-17-41] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
 [2022-03-09 12-17-41] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
 [2022-03-09 12-17-41] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-22-42] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-22-42] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-22-42] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-22-42] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-22-42] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-23-01] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-23-01] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-23-01] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-23-01] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-23-01] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-23-28] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-23-28] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-23-28] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-23-28] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-23-28] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-44-14] [ INFO ] [TestLog:17] Elcom.company.Log4J.LeonEsta corriendo
+[2022-03-09 12-44-46] [ INFO ] [TestLog:17] El Leon esta corriendo
+[2022-03-09 13-01-10] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-10] [ INFO ] [TestLog:22] El leon leon1 es alfa y tiene una edad de 12
+[2022-03-09 13-01-10] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-01-30] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-30] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-01-30] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-01-32] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-32] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-01-32] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-10-40] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-09 13-10-40] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-10-40] [ INFO ] [TestLog:18] El Tigre esta corriendo
+[2022-03-09 13-10-40] [ ERROR] [TestLog:31] Error al crear tigre 2:
+java.lang.RuntimeException: la edad del Tigre tigre1 no puede ser menor a 0
+	at com.company.Log4J.Animal.<init>(Animal.java:12)
+	at com.company.Log4J.Tigre.<init>(Tigre.java:6)
+	at com.company.Log4J.TestLog.main(TestLog.java:28)
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-09 13-11-05] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Tigre esta corriendo
+[2022-03-09 13-11-05] [ ERROR] [TestLog:31] Error al crear tigre 2:
+java.lang.RuntimeException: la edad del Tigre tigre1 no puede ser menor a 0
+	at com.company.Log4J.Animal.<init>(Animal.java:12)
+	at com.company.Log4J.Tigre.<init>(Tigre.java:6)
+	at com.company.Log4J.TestLog.main(TestLog.java:28)
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Leon esta corriendo
