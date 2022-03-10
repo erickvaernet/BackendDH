@@ -1,4 +1,4 @@
-package com.company.JDBC;
+package com.company.JDBC.Ejemplos1;
 
 import java.sql.*;
 
@@ -17,8 +17,7 @@ public class TestMainJDBC {
         Connection con;
         Statement stmt;
         try {
-            con = DriverManager.getConnection("jdbc:h2:"+
-                    "./Database/my", "root", "myPassword");
+            con = DriverManager.getConnection("jdbc:h2:"+"./Database/my", "root", "myPassword");
             stmt = con.createStatement();
 
             //Código para crear una tabla. Elimina la tabla si esta ya existe y la
