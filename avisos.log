@@ -421,3 +421,107 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: A file path that is implicit
 [2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
 [2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
 [2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-38-23] [ FATAL] [TestMainJDBC3:74] Error en la aplicación:
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:3 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:3 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(1, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:49)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:44)
+[2022-03-10 16-47-34] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-47-34] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:44] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:48] Creando Lista de Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:58] Recorriendo la lista de empleados
+[2022-03-10 17-20-23] [ ERROR] [TestMainJDBC3:32] Error al insertar empleados enla tabla Empleados
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(3, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:173)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC33.main(TestMainJDBC33.java:29)
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:39] empleado Actualizado con exito
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:48] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:57] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados
+[2022-03-10 17-20-56] [ ERROR] [TestMainJDBC3:32] Error al insertar empleados enla tabla Empleados
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(3, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:173)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC33.main(TestMainJDBC33.java:29)
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:39] empleado Actualizado con exito
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:48] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:57] Eliminacion de empleado segun id con exito
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados

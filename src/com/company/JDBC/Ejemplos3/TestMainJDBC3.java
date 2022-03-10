@@ -22,8 +22,10 @@ public class TestMainJDBC3 {
         String insertEmpleados= """
             INSERT INTO EMPLEADOS VALUES(1, 'Juan',28,'Digital','2022-03-04');
             INSERT INTO EMPLEADOS VALUES(2, 'Carlos',27,'Google','2022-03-10');
-            INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');            
+            INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');     
             """;
+        //INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');
+
         String queryEmpleados="select * from EMPLEADOS";
 
         try {
@@ -32,7 +34,6 @@ public class TestMainJDBC3 {
 
             logger.info("Obteniendo conexion a la Base de Datos");
             connection= DriverManager.getConnection("jdbc:h2:/~/test", "sa", "");
-
 
             logger.info("Creando Tabla Empleados en la Base de Datos");
             stmt=connection.createStatement();
