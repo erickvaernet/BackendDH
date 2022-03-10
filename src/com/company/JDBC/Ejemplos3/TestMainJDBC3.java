@@ -31,7 +31,7 @@ public class TestMainJDBC3 {
             Class.forName("org.h2.Driver").newInstance();
 
             logger.info("Obteniendo conexion a la Base de Datos");
-            connection= DriverManager.getConnection("jdbc:h2:"+"./Database/my", "root", "myPassword");
+            connection= DriverManager.getConnection("jdbc:h2:/~/test", "sa", "");
 
 
             logger.info("Creando Tabla Empleados en la Base de Datos");
