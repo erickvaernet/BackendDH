@@ -18,3 +18,38 @@ Wrong user name or password [28000-206]
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:529)
 	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
 	... 12 more
+2022-03-10 13:41:41 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "INICIO"
+Unknown data type: "INICIO"; SQL statement:
+
+CREATE TABLE EMPLEADOS(ID INT PRIMARY KEY, NAME VARCHAR(80), EDAD INT, EMPRESA VARCHAR(80),FECHA INICIO DATE);
+ [50004-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:7266)
+	at org.h2.command.Parser.readIfDataType(Parser.java:7107)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:7089)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:6964)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:10405)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:10343)
+	at org.h2.command.Parser.parseCreate(Parser.java:7811)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1140)
+	at org.h2.command.Parser.parse(Parser.java:1068)
+	at org.h2.command.Parser.parse(Parser.java:1037)
+	at org.h2.command.Parser.prepareCommand(Parser.java:965)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:624)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:39)
+2022-03-10 13:42:42 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADO" no encontrada
+Table "EMPLEADO" not found; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan',28,'Digital','2022-03-04');
+INSERT INTO EMPLEADO VALUES(2, 'Carlos',28,'Google','2022-03-10');
+INSERT INTO EMPLEADO VALUES(3, 'Ivan',28,'Facebook','2022-02-08');
+ [42102-206]

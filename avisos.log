@@ -68,3 +68,92 @@ java.lang.RuntimeException: la edad del Tigre tigre1 no puede ser menor a 0
 	at com.company.Log4J.Tigre.<init>(Tigre.java:6)
 	at com.company.Log4J.TestLog.main(TestLog.java:28)
 [2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-10 13-41-40] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-41-40] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-41-41] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-41-41] [ FATAL] [TestMainJDBC3:65] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "INICIO"
+Unknown data type: "INICIO"; SQL statement:
+
+CREATE TABLE EMPLEADOS(ID INT PRIMARY KEY, NAME VARCHAR(80), EDAD INT, EMPRESA VARCHAR(80),FECHA INICIO DATE);
+ [50004-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:7266)
+	at org.h2.command.Parser.readIfDataType(Parser.java:7107)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:7089)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:6964)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:10405)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:10343)
+	at org.h2.command.Parser.parseCreate(Parser.java:7811)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1140)
+	at org.h2.command.Parser.parse(Parser.java:1068)
+	at org.h2.command.Parser.parse(Parser.java:1037)
+	at org.h2.command.Parser.prepareCommand(Parser.java:965)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:624)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:39)
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 13-42-42] [ FATAL] [TestMainJDBC3:65] Error en la aplicación:
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADO" no encontrada
+Table "EMPLEADO" not found; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan',28,'Digital','2022-03-04');
+INSERT INTO EMPLEADO VALUES(2, 'Carlos',28,'Google','2022-03-10');
+INSERT INTO EMPLEADO VALUES(3, 'Ivan',28,'Facebook','2022-02-08');
+ [42102-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:9460)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:9431)
+	at org.h2.command.Parser.readTableOrView(Parser.java:9420)
+	at org.h2.command.Parser.readTableOrView(Parser.java:9390)
+	at org.h2.command.Parser.parseInsert(Parser.java:1953)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1191)
+	at org.h2.command.Parser.parse(Parser.java:1068)
+	at org.h2.command.Parser.parse(Parser.java:1037)
+	at org.h2.command.Parser.prepareCommand(Parser.java:965)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:624)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:562)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1111)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:186)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:43)
+[2022-03-10 13-43-05] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-43-05] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-07-18] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-07-18] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados

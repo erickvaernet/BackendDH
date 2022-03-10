@@ -6,8 +6,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TestMainJDBC3 {
-    private static final Logger logger= Logger.getLogger(TestMainJDBC3.class);
+public class TestMainJDBC22 {
+    private static final Logger logger= Logger.getLogger(TestMainJDBC22.class);
     public static void main(String[] args) {
 
         try {
@@ -42,13 +42,14 @@ public class TestMainJDBC3 {
         } catch (SQLException e) {
             logger.error("Error en la creación y/o ejecucion de la consulta",e);
         }
-
-        try {
-            connection.close();
-        } catch (SQLException e) {
-            logger.error("Error al cerrar la conexion a la BD",e);
+        finally {
+            try {
+                connection.close();
+            } catch (SQLException e) {
+                logger.error("Error al cerrar la conexion a la BD",e);
+            }
         }
-        ;
+
 
 
     }
