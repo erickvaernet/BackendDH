@@ -21,7 +21,7 @@ public class DomicilioDAOH2 implements IDAO<Domicilio> {
             Class.forName(DB_JDBC_DRIVER).newInstance();
             connection= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
 
-            ps= connection.prepareStatement("INSERT INTO domicilios VALUES (?,?,?,?)");
+            ps= connection.prepareStatement("INSERT INTO domicilios VALUES (?,?,?,?,?)");
             ps.setLong(1,domicilio.getId());
             ps.setString(2, domicilio.getCalle());
             ps.setInt(3, domicilio.getNumero());

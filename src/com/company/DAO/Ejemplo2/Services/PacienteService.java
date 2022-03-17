@@ -1,13 +1,18 @@
 package com.company.DAO.Ejemplo2.Services;
 
-import com.company.DAO.Ejemplo1.dao.IDao;
+
+import com.company.DAO.Ejemplo2.DAO.IDAO;
 import com.company.DAO.Ejemplo2.Models.Paciente;
 
 import java.util.List;
 
 public class PacienteService {
 
-    private IDao<Paciente> pacienteIDao;
+    private IDAO<Paciente> pacienteIDao;
+
+    public PacienteService(IDAO<Paciente> pacienteIDao) {
+        this.pacienteIDao = pacienteIDao;
+    }
 
     public Paciente guardarPaciente(Paciente paciente){
         return this.pacienteIDao.guardar(paciente);

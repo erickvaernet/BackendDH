@@ -1,2 +1,2 @@
-create table IF NOT EXISTS domicilios(id bigint auto_increment primary key,calle varchar(255),numero int ,localidad varchar (255),provincia varchar (255));
-create table IF NOT EXISTS pacientes(id bigint auto_increment primary key,nombre varchar(255),apellido varchar (255),dni bigint ,fecha_ingreso DATE,domicilio_id int);
+create table IF NOT EXISTS domicilios(id bigint primary key,calle varchar(255),numero int ,localidad varchar (255),provincia varchar (255));
+create table IF NOT EXISTS pacientes(id bigint primary key,dni bigint ,nombre varchar(255),apellido varchar (255),fecha_ingreso DATE, domicilio_id bigint,foreign key (domicilio_id) references DOMICILIOS(id));

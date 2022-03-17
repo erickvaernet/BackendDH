@@ -1,13 +1,17 @@
 package com.company.DAO.Ejemplo2.Services;
 
-import com.company.DAO.Ejemplo1.dao.IDao;
+import com.company.DAO.Ejemplo2.DAO.IDAO;
 import com.company.DAO.Ejemplo2.Models.Domicilio;
 
 import java.util.List;
 
 public class DomicilioService {
 
-    private IDao<Domicilio> domicilioIDao;
+    private IDAO<Domicilio> domicilioIDao;
+
+    public DomicilioService(IDAO<Domicilio> domicilioIDao) {
+        this.domicilioIDao = domicilioIDao;
+    }
 
     public Domicilio guardarDomicilio(Domicilio domicilio){
         return this.domicilioIDao.guardar(domicilio);

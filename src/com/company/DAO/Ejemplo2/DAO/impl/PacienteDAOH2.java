@@ -6,6 +6,7 @@ import com.company.DAO.Ejemplo2.Models.Paciente;
 
 import java.sql.*;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class PacienteDAOH2 implements IDAO<Paciente> {
@@ -22,7 +23,7 @@ public class PacienteDAOH2 implements IDAO<Paciente> {
             Class.forName(DB_JDBC_DRIVER).newInstance();
             connection= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
 
-            ps= connection.prepareStatement("INSERT INTO pacientes VALUES (?,?,?,?)");
+            ps= connection.prepareStatement("INSERT INTO pacientes VALUES (?,?,?,?,?,?)");
             ps.setLong(1,paciente.getId());
             ps.setLong(2, paciente.getDni());
             ps.setString(3, paciente.getNombre());
@@ -92,7 +93,7 @@ public class PacienteDAOH2 implements IDAO<Paciente> {
                 String nombrePaciente=rs.getString("nombre");
                 String apellidoPaciente=rs.getString("apellido");
                 LocalDate fechaIngresoPaciente=rs.getDate("fecha_ingreso").toLocalDate();
-                Long idDomicilio= rs.getLong("id_domicilio");
+                Long idDomicilio= rs.getLong("domicilio_id");
                 Domicilio domicilioPaciente=new DomicilioDAOH2().buscar(idDomicilio);
                 paciente=new Paciente(
                         pacienteId,
@@ -121,7 +122,7 @@ public class PacienteDAOH2 implements IDAO<Paciente> {
     public List<Paciente> buscarTodos() {
         Connection connection=null;
         PreparedStatement ps=null;
-        List<Paciente> pacientes=null;
+        List<Paciente> pacientes=new ArrayList<>();
         try {
             Class.forName(DB_JDBC_DRIVER).newInstance();
             connection= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
@@ -133,7 +134,7 @@ public class PacienteDAOH2 implements IDAO<Paciente> {
                 String nombrePaciente=rs.getString("nombre");
                 String apellidoPaciente=rs.getString("apellido");
                 LocalDate fechaIngresoPaciente=rs.getDate("fecha_ingreso").toLocalDate();
-                Long idDomicilio= rs.getLong("id_domicilio");
+                Long idDomicilio= rs.getLong("domicilio_id");
                 Domicilio domicilioPaciente=new DomicilioDAOH2().buscar(idDomicilio);
                 pacientes.add(
                         new Paciente(
