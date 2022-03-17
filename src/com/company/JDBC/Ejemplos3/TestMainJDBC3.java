@@ -2,9 +2,7 @@ package com.company.JDBC.Ejemplos3;
 
 import org.apache.log4j.Logger;
 
-import javax.management.Query;
 import java.sql.*;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,13 +15,11 @@ public class TestMainJDBC3 {
         Statement stmt;
         String createTable= """
             DROP TABLE IF EXISTS EMPLEADOS;
-            CREATE TABLE EMPLEADOS(ID INT PRIMARY KEY, NAME VARCHAR(80), EDAD INT, EMPRESA VARCHAR(80),FECHA DATE);                                
-            """;
+            CREATE TABLE EMPLEADOS(ID INT PRIMARY KEY, NAME VARCHAR(80), EDAD INT, EMPRESA VARCHAR(80),FECHA DATE);""";
         String insertEmpleados= """
             INSERT INTO EMPLEADOS VALUES(1, 'Juan',28,'Digital','2022-03-04');
             INSERT INTO EMPLEADOS VALUES(2, 'Carlos',27,'Google','2022-03-10');
-            INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');     
-            """;
+            INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');""";
         //INSERT INTO EMPLEADOS VALUES(3, 'Ivan',25,'Facebook','2022-02-08');
 
         String queryEmpleados="select * from EMPLEADOS";
@@ -74,10 +70,12 @@ public class TestMainJDBC3 {
             logger.fatal("Error en la aplicación:",e);
         }
         finally {
-            try {
-                connection.close();
-            } catch (SQLException e) {
-                logger.error("Error al cerrar la conexion a la BD",e);
+            if(connection!=null) {
+                try {
+                    connection.close();
+                } catch (SQLException e) {
+                    logger.error("Error al cerrar la conexion a la BD", e);
+                }
             }
         }
 

@@ -3,9 +3,6 @@ package com.company.JDBC.Ejemplos3;
 import org.apache.log4j.Logger;
 
 import java.sql.*;
-import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
 public class TestMainJDBC33 {
 
@@ -22,8 +19,7 @@ public class TestMainJDBC33 {
                 INSERT INTO EMPLEADOS VALUES(3, 'Juan',28,'Digital','2022-03-04');
                 INSERT INTO EMPLEADOS VALUES(4, 'Carlos',27,'Google','2022-03-10');
                 INSERT INTO EMPLEADOS VALUES(5, 'Ivan',25,'Facebook','2022-02-08');
-                INSERT INTO EMPLEADOS VALUES(5, 'Ivan',25,'Facebook','2022-02-08');        
-                """;
+                INSERT INTO EMPLEADOS VALUES(5, 'Ivan',25,'Facebook','2022-02-08');""";
             try {
                 stmt = connection.createStatement();
                 stmt.executeUpdate(insertEmpleados);
@@ -71,35 +67,6 @@ public class TestMainJDBC33 {
             }
         }
 
-
-
-
-
-        /*
-        String queryEmpleados = "select * from EMPLEADOS";
-        logger.info("Obteniendo los empleados de la Tabla Empleados");
-        ResultSet results = stmt.executeQuery(queryEmpleados);
-
-        logger.info("Creando Lista de Empleados");
-        List<Empleado> empleados = new ArrayList<>();
-        while (results.next()) {
-            empleados.add(new Empleado(results.getLong(1),
-                    results.getString(2),
-                    results.getInt(3),
-                    results.getString(4),
-                    results.getDate(5)));
-        }
-        logger.info("Recorriendo la lista de empleados");
-        System.out.println("Empleados: {");
-        empleados.forEach((e) ->
-                System.out.println("    " + e.getId() + "-" + e.getNombre()
-                        + ", edad:" + e.getEdad()
-                        + ", empresa:" + e.getEmpresa()
-                        + ", fechaInicio:" + e.getFechaInicio()
-                )
-        );
-        System.out.println("}");
-        */
 
     }
 }
