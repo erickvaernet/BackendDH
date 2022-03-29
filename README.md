@@ -27,3 +27,6 @@ Repositorio para almacenar ejercicios de Backend. Orden Cronológico de las carp
 
 5. #### **primerProyectoSpring**
   Contiene el primer proyecto donde se aplica Spring y SpringBoot.
+
+6. #### **springMVC**
+  Contiene prácticas y primeros pasos en Spring aplicando MVC
