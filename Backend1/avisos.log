@@ -1,0 +1,527 @@
+[2022-03-09 12-17-17] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-17] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-17] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-17] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-17] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-17-33] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-33] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-33] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-33] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-33] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-17-41] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-17-41] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-17-41] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-17-41] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-17-41] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-22-42] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-22-42] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-22-42] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-22-42] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-22-42] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-23-01] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-23-01] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-23-01] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-23-01] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-23-01] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-23-28] [ INFO ] [TestLog:9] Empezamos nuestro metodo MAIN
+[2022-03-09 12-23-28] [ ERROR] [TestLog:14] Error por dividir por cero 
+java.lang.ArithmeticException: / by zero
+	at com.company.Log4J.TestLog.main(TestLog.java:12)
+[2022-03-09 12-23-28] [ WARN ] [TestLog:16] Advertencia el metodo MAIN esta por finalizar
+[2022-03-09 12-23-28] [ DEBUG] [TestLog:17] Esto va a mostrarse solo si el infoLogger esta en DEBUG
+[2022-03-09 12-23-28] [ INFO ] [TestLog:18] Finalizamos el thread MAIN
+[2022-03-09 12-44-14] [ INFO ] [TestLog:17] Elcom.company.Log4J.LeonEsta corriendo
+[2022-03-09 12-44-46] [ INFO ] [TestLog:17] El Leon esta corriendo
+[2022-03-09 13-01-10] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-10] [ INFO ] [TestLog:22] El leon leon1 es alfa y tiene una edad de 12
+[2022-03-09 13-01-10] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-01-30] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-30] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-01-30] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-01-32] [ INFO ] [TestLog:15] El Leon esta corriendo
+[2022-03-09 13-01-32] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-01-32] [ INFO ] [TestLog:15] El Tigre esta corriendo
+[2022-03-09 13-10-40] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-09 13-10-40] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-10-40] [ INFO ] [TestLog:18] El Tigre esta corriendo
+[2022-03-09 13-10-40] [ ERROR] [TestLog:31] Error al crear tigre 2:
+java.lang.RuntimeException: la edad del Tigre tigre1 no puede ser menor a 0
+	at com.company.Log4J.Animal.<init>(Animal.java:12)
+	at com.company.Log4J.Tigre.<init>(Tigre.java:6)
+	at com.company.Log4J.TestLog.main(TestLog.java:28)
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-09 13-11-05] [ ERROR] [TestLog:29] EL leon leon1 tiene edad menor a 10 y tampoco es alfa
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Tigre esta corriendo
+[2022-03-09 13-11-05] [ ERROR] [TestLog:31] Error al crear tigre 2:
+java.lang.RuntimeException: la edad del Tigre tigre1 no puede ser menor a 0
+	at com.company.Log4J.Animal.<init>(Animal.java:12)
+	at com.company.Log4J.Tigre.<init>(Tigre.java:6)
+	at com.company.Log4J.TestLog.main(TestLog.java:28)
+[2022-03-09 13-11-05] [ INFO ] [TestLog:18] El Leon esta corriendo
+[2022-03-10 13-41-40] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-41-40] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-41-41] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-41-41] [ FATAL] [TestMainJDBC3:65] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientException: Tipo de dato desconocido : "INICIO"
+Unknown data type: "INICIO"; SQL statement:
+
+CREATE TABLE EMPLEADOS(ID INT PRIMARY KEY, NAME VARCHAR(80), EDAD INT, EMPRESA VARCHAR(80),FECHA INICIO DATE);
+ [50004-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:573)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.readIfDataType1(Parser.java:7266)
+	at org.h2.command.Parser.readIfDataType(Parser.java:7107)
+	at org.h2.command.Parser.parseColumnWithType(Parser.java:7089)
+	at org.h2.command.Parser.parseColumnForTable(Parser.java:6964)
+	at org.h2.command.Parser.parseTableColumnDefinition(Parser.java:10405)
+	at org.h2.command.Parser.parseCreateTable(Parser.java:10343)
+	at org.h2.command.Parser.parseCreate(Parser.java:7811)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1140)
+	at org.h2.command.Parser.parse(Parser.java:1068)
+	at org.h2.command.Parser.parse(Parser.java:1037)
+	at org.h2.command.Parser.prepareCommand(Parser.java:965)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:624)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:53)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:252)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:223)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:39)
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-42-42] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 13-42-42] [ FATAL] [TestMainJDBC3:65] Error en la aplicación:
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "EMPLEADO" no encontrada
+Table "EMPLEADO" not found; SQL statement:
+INSERT INTO EMPLEADO VALUES(1, 'Juan',28,'Digital','2022-03-04');
+INSERT INTO EMPLEADO VALUES(2, 'Carlos',28,'Google','2022-03-10');
+INSERT INTO EMPLEADO VALUES(3, 'Ivan',28,'Facebook','2022-02-08');
+ [42102-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:521)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:9460)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:9431)
+	at org.h2.command.Parser.readTableOrView(Parser.java:9420)
+	at org.h2.command.Parser.readTableOrView(Parser.java:9390)
+	at org.h2.command.Parser.parseInsert(Parser.java:1953)
+	at org.h2.command.Parser.parsePrepared(Parser.java:1191)
+	at org.h2.command.Parser.parse(Parser.java:1068)
+	at org.h2.command.Parser.parse(Parser.java:1037)
+	at org.h2.command.Parser.prepareCommand(Parser.java:965)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:624)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:562)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1111)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:186)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:43)
+[2022-03-10 13-43-05] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 13-43-05] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 13-43-06] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-06-25] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-06-52] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-07-18] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-07-18] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-07-19] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-51-00] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-51-00] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-51-00] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 14-53-29] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-53-29] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-53-29] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 14-54-39] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-54-39] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-54-40] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Conexión rota: "java.net.SocketException: Se ha anulado una conexión establecida por el software en su equipo host.: localhost"
+Connection is broken: "java.net.SocketException: Se ha anulado una conexión establecida por el software en su equipo host.: localhost" [90067-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:437)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:325)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: java.net.SocketException: Se ha anulado una conexión establecida por el software en su equipo host.
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:325)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:350)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:803)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:976)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:244)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:263)
+	at java.base/java.io.DataInputStream.readInt(DataInputStream.java:393)
+	at org.h2.value.Transfer.readInt(Transfer.java:270)
+	at org.h2.engine.SessionRemote.done(SessionRemote.java:603)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:163)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:433)
+	... 6 more
+[2022-03-10 14-55-37] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-55-37] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-55-37] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: Conexión rota: "java.net.UnknownHostException: Host desconocido (~): ~"
+Connection is broken: "java.net.UnknownHostException: Host desconocido (~): ~" [90067-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:437)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:325)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: java.net.UnknownHostException: Host desconocido (~)
+	at java.base/java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.base/java.net.InetAddress$PlatformNameService.lookupAllHostAddr(InetAddress.java:932)
+	at java.base/java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1517)
+	at java.base/java.net.InetAddress$NameServiceAddresses.get(InetAddress.java:851)
+	at java.base/java.net.InetAddress.getAllByName0(InetAddress.java:1507)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1366)
+	at java.base/java.net.InetAddress.getAllByName(InetAddress.java:1300)
+	at java.base/java.net.InetAddress.getByName(InetAddress.java:1250)
+	at org.h2.util.NetUtils.createSocket(NetUtils.java:98)
+	at org.h2.engine.SessionRemote.initTransfer(SessionRemote.java:130)
+	at org.h2.engine.SessionRemote.connectServer(SessionRemote.java:433)
+	... 6 more
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 14-55-52] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 14-57-53] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-57-53] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-57-53] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 14-57-59] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-57-59] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-58-00] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 14-58-14] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 14-58-14] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 14-58-14] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 15-00-40] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 15-00-40] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 15-00-40] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:216)
+	at org.h2.mvstore.db.Store.convertMVStoreException(Store.java:161)
+	at org.h2.mvstore.db.Store.<init>(Store.java:140)
+	at org.h2.engine.Database.<init>(Database.java:324)
+	at org.h2.engine.Engine.openSession(Engine.java:92)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+Caused by: org.h2.mvstore.MVStoreException: The file is locked: C:/Users/erick/test.mv.db [2.0.206/7]
+	at org.h2.mvstore.DataUtils.newMVStoreException(DataUtils.java:1004)
+	at org.h2.mvstore.FileStore.open(FileStore.java:163)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:444)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:4052)
+	at org.h2.mvstore.db.Store.<init>(Store.java:129)
+	... 10 more
+[2022-03-10 15-00-53] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 15-00-53] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 15-00-53] [ FATAL] [TestMainJDBC3:73] Error en la aplicación:
+org.h2.jdbc.JdbcSQLNonTransientConnectionException: A file path that is implicitly relative to the current working directory is not allowed in the database URL "jdbc:h2:localhost/~/test". Use an absolute path, ~/name, ./name, or the baseDir setting instead. [90011-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:697)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.engine.ConnectionInfo.getName(ConnectionInfo.java:464)
+	at org.h2.engine.Engine.openSession(Engine.java:49)
+	at org.h2.engine.Engine.openSession(Engine.java:222)
+	at org.h2.engine.Engine.createSession(Engine.java:201)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:338)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:117)
+	at org.h2.Driver.connect(Driver.java:59)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:677)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:228)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:34)
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 15-00-58] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 15-18-02] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:30] Obteniendo el Driver de la Base de Datos
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:33] Obteniendo conexion a la Base de Datos
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 15-18-19] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-38-23] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-38-23] [ FATAL] [TestMainJDBC3:74] Error en la aplicación:
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:3 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:3 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(1, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandList.executeRemaining(CommandList.java:49)
+	at org.h2.command.CommandList.update(CommandList.java:66)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC3.main(TestMainJDBC3.java:44)
+[2022-03-10 16-47-34] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-47-34] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 16-47-35] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:45] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:50] Creando Lista de Empleados
+[2022-03-10 16-47-41] [ INFO ] [TestMainJDBC3:60] Recorriendo la lista de empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:31] Obteniendo el Driver de la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:34] Obteniendo conexion a la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:37] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:41] Insertando empleados en la Tabla Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:44] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:48] Creando Lista de Empleados
+[2022-03-10 16-48-19] [ INFO ] [TestMainJDBC3:58] Recorriendo la lista de empleados
+[2022-03-10 17-20-23] [ ERROR] [TestMainJDBC3:32] Error al insertar empleados enla tabla Empleados
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(3, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:173)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC33.main(TestMainJDBC33.java:29)
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:39] empleado Actualizado con exito
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:48] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-23] [ INFO ] [TestMainJDBC3:57] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 17-20-50] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados
+[2022-03-10 17-20-56] [ ERROR] [TestMainJDBC3:32] Error al insertar empleados enla tabla Empleados
+org.h2.jdbc.JdbcSQLIntegrityConstraintViolationException: Violación de indice de Unicidad ó Clave primaria: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"
+Unique index or primary key violation: "PRIMARY KEY ON PUBLIC.EMPLEADOS(ID) ( /* key:0 */ 3, 'Ivan', 25, 'Facebook', DATE '2022-02-08')"; SQL statement:
+INSERT INTO EMPLEADOS VALUES(3, 'Juan',28,'Digital','2022-03-04'); [23505-206]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:527)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:496)
+	at org.h2.message.DbException.get(DbException.java:227)
+	at org.h2.message.DbException.get(DbException.java:203)
+	at org.h2.mvstore.db.MVPrimaryIndex.add(MVPrimaryIndex.java:120)
+	at org.h2.mvstore.db.MVTable.addRow(MVTable.java:535)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:174)
+	at org.h2.command.dml.Insert.update(Insert.java:135)
+	at org.h2.command.dml.DataChangeStatement.update(DataChangeStatement.java:61)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:173)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.command.CommandList.update(CommandList.java:65)
+	at org.h2.command.Command.executeUpdate(Command.java:252)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:190)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:143)
+	at com.company.JDBC.Ejemplos3.TestMainJDBC33.main(TestMainJDBC33.java:29)
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:39] empleado Actualizado con exito
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:48] Eliminacion de empleado segun id con exito
+[2022-03-10 17-20-56] [ INFO ] [TestMainJDBC3:57] Eliminacion de empleado segun id con exito
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:32] Obteniendo el Driver de la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:35] Obteniendo conexion a la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:38] Creando Tabla Empleados en la Base de Datos
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:42] Insertando empleados en la Tabla Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:46] Obteniendo los empleados de la Tabla Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:51] Creando Lista de Empleados
+[2022-03-10 17-21-21] [ INFO ] [TestMainJDBC3:61] Recorriendo la lista de empleados
