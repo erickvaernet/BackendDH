@@ -1,0 +1,335 @@
+[2022-03-22 14-25-15] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-25-15] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-25-15] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-25-15] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-25-15] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-26-14] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-26-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-14] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-26-31] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-26-31] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-31] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-31] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-26-31] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-27-43] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-27-43] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-27-43] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-27-43] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-27-43] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-28-19] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-28-19] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-28-19] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-28-19] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-28-19] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-32-11] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.io.FileNotFoundException: resource /create.sql"; "classpath:/create.sql"
+IO Exception: "java.io.FileNotFoundException: resource /create.sql"; "classpath:/create.sql"; SQL statement:
+RUNSCRIPT FROM 'classpath:/create.sql' [90031-206]
+[2022-03-22 14-32-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-11] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-32-57] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: Error de formato en URL; debe ser "jdbc:h2:{ {.|mem:}[name] | [file:]fileName | {tcp|ssl}:[//]server[:port][,server2[:port]]/name }[;key=value...]" pero es "jdbc:h2:tcp://localhost/~/test"
+URL format error; must be "jdbc:h2:{ {.|mem:}[name] | [file:]fileName | {tcp|ssl}:[//]server[:port][,server2[:port]]/name }[;key=value...]" but is "jdbc:h2:tcp://localhost/~/test" [90046-206]
+[2022-03-22 14-32-57] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-57] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-57] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-32-57] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-38-34] [ ERROR] [DBH2Singleton:49] Error al crear las tablas en la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-38-34] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-38-34] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-38-34] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-38-34] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-42-39] [ ERROR] [DBH2Singleton:49] Error al crear las tablas en la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-42-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-42-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-42-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-42-39] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-49-11] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: Error de Sintaxis en sentencia SQL "CREATE TABLE IF NOT EXISTS DENTIST ID[*] INT PRIMARY KEY AUTO_INCREMENT, MATRICULA INT, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255))"
+Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS DENTIST ID[*] INT PRIMARY KEY AUTO_INCREMENT, MATRICULA INT, NOMBRE VARCHAR(255), APELLIDO VARCHAR(255))"; SQL statement:
+CREATE TABLE IF NOT EXISTS DENTIST id INT PRIMARY KEY AUTO_INCREMENT, matricula INT, nombre VARCHAR(255), apellido VARCHAR(255)) [42000-206]
+[2022-03-22 14-49-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-49-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-49-11] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-49-11] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-50-10] [ ERROR] [DBH2Singleton:49] Error al crear las tablas en la base de datos: Error General : "java.nio.file.InvalidPathException: Illegal char <:> at index 0: :/create.sql"
+General error: "java.nio.file.InvalidPathException: Illegal char <:> at index 0: :/create.sql"; SQL statement:
+RUNSCRIPT FROM ':/create.sql' [50000-206]
+[2022-03-22 14-50-10] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-10] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-10] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-10] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-50-46] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-46] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-46] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSER[*] INTO ODONTOLOGOS (?,?,?)"; se esperaba "INSERT"
+Syntax error in SQL statement "INSER[*] INTO ODONTOLOGOS (?,?,?)"; expected "INSERT"; SQL statement:
+INSER INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 14-50-46] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-51-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-51-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-51-14] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-51-14] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-53-28] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+[2022-03-22 14-53-28] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-53-28] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-53-28] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-53-28] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-53-59] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-53-59] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-53-59] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-53-59] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-55-06] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 14-55-06] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-55-06] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-55-06] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String)" because "this.connection" is null
+[2022-03-22 14-55-06] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 14-57-59] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-58-00] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-58-00] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Tabla "ODONTOLOGOS" no encontrada
+Table "ODONTOLOGOS" not found; SQL statement:
+INSERT INTO odontologos (?,?,?) [42102-206]
+[2022-03-22 14-58-00] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-00-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSERT INTO ODONTOLOGOS (?[*],?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO ODONTOLOGOS (?[*],?,?)"; expected "identifier"; SQL statement:
+INSERT INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 15-00-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSERT INTO ODONTOLOGOS (?[*],?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO ODONTOLOGOS (?[*],?,?)"; expected "identifier"; SQL statement:
+INSERT INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 15-00-39] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:Error de Sintaxis en sentencia SQL "INSERT INTO ODONTOLOGOS (?[*],?,?)"; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO ODONTOLOGOS (?[*],?,?)"; expected "identifier"; SQL statement:
+INSERT INTO odontologos (?,?,?) [42001-206]
+[2022-03-22 15-00-39] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-01-33] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO odontologos VALUES (?,?,?) [21002-206]
+[2022-03-22 15-01-33] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO odontologos VALUES (?,?,?) [21002-206]
+[2022-03-22 15-01-33] [ ERROR] [Odontologo:39] Error al guardar odontologo en la Base de Datos:La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO odontologos VALUES (?,?,?) [21002-206]
+[2022-03-22 15-01-33] [ ERROR] [Odontologo:104] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-04-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-04-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-04-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-04-42] [ ERROR] [Odontologo:108] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-05-15] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-05-15] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-05-15] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-05-15] [ ERROR] [Odontologo:108] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-07-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-07-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-07-42] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-07-42] [ ERROR] [Odontologo:108] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-08-12] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-08-12] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-08-12] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-08-12] [ ERROR] [Odontologo:108] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-08-50] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-08-50] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-08-50] [ DEBUG] [Odontologo:37] Odontólogo creado: Odontologo{id=0, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-08-50] [ ERROR] [Odontologo:106] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-12-00] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: La base de datos puede que ya esté siendo utilizada: null. Soluciones Posibles: cierre todas las otras conexiones; use el modo server
+Database may be already in use: null. Possible solutions: close all other connection(s); use the server mode [90020-206]
+[2022-03-22 15-12-00] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-12-00] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-12-00] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-12-00] [ ERROR] [Odontologo:106] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-12-11] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=16, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-12-11] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=17, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-12-11] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=18, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-12-11] [ ERROR] [Odontologo:106] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-14-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=19, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-14-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=20, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-14-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=21, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-15-59] [ ERROR] [DBH2Singleton:27] Error en la conexion a la base de datos: IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"
+IO Exception: "java.nio.file.NoSuchFileException: create.sql"; "create.sql"; SQL statement:
+RUNSCRIPT FROM 'create.sql' [90031-206]
+[2022-03-22 15-15-59] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-15-59] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-15-59] [ ERROR] [Odontologo:43] Error al guardar odontologo en la Base de Datos:Cannot invoke "java.sql.Connection.prepareStatement(String, int)" because "this.connection" is null
+[2022-03-22 15-15-59] [ ERROR] [Odontologo:106] No se pudo encontrar el odontologo en la Base de Datos
+[2022-03-22 15-16-37] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=22, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-16-37] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=23, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-16-37] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=24, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-18-03] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-18-03] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-18-03] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-19-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-19-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-19-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-19-41] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=7, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-19-41] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=8, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-19-41] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=9, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-22 15-20-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=10, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-22 15-20-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=11, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-22 15-20-23] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=12, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-02-22] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=13, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-02-22] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=14, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-02-22] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=15, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-09-51] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=16, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-09-51] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=17, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-09-51] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=18, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-12-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=19, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-12-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=20, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-12-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=21, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-14-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=22, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-14-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=23, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-14-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=24, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-14-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=25, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-14-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=26, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-14-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=27, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-17-27] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-17-27] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-17-27] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-18-36] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-19-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=256789, nombre='Rick', apellido='Sanchez'}
+[2022-03-23 20-19-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=472369, nombre='Moira', apellido='Rodriguez'}
+[2022-03-23 20-19-02] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=765321, nombre='Olga', apellido='Pochon'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-35-48] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-37-43] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-39-52] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-40-25] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-42-32] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:57] Se elimino el odontologo de id:1 de la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:82] Tras la busqueda se encontro null en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:109] Se obtuvo ListaOdontoogos:
+-> Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+-> Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+-> Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:82] Tras la busqueda se encontro Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-55-55] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-55-55] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:57] Se elimino el odontologo de id:1 de la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:83] Tras la busqueda NO se encontro el odontologo de id=1 en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:110] Se obtuvo ListaOdontoogos:
+-> Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+-> Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+-> Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:82] Tras la busqueda se encontro Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:83] Tras la busqueda NO se encontro el odontologo de id=5 en la tabla ODONTOLOGOS
+[2022-03-23 20-58-04] [ DEBUG] [Odontologo:39] Odontólogo creado: Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'}
+[2022-03-23 20-58-04] [ INFO ] [Odontologo:41] Se guardo Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=1, numeroMatricula=73, nombre='Ayudin3', apellido='Auxiliar3'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:56] Se elimino el odontologo de id:1 de la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:82] Tras la busqueda NO se encontro el odontologo de id=1 en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:109] Se obtuvo ListaOdontoogos:
+-> Odontologo{id=2, numeroMatricula=1924, nombre='Erick', apellido='Vaernet'}
+-> Odontologo{id=3, numeroMatricula=5242, nombre='Juan', apellido='Farre'}
+-> Odontologo{id=4, numeroMatricula=4689, nombre='Ivan', apellido='Rodriguez'}
+
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:81] Tras la busqueda se encontro Odontologo{id=5, numeroMatricula=72, nombre='Ayudin2', apellido='Auxiliar2'} en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:82] Tras la busqueda NO se encontro el odontologo de id=5 en la tabla ODONTOLOGOS
+[2022-03-23 20-59-02] [ INFO ] [Odontologo:39] Se guardo Odontologo{id=6, numeroMatricula=7777, nombre='Ayudin', apellido='Auxiliar'} en la tabla ODONTOLOGOS
