@@ -2,28 +2,34 @@ package com.example.springmvc.controller;
 
 import com.example.springmvc.dominio.Usuario;
 import com.example.springmvc.services.UsuarioService;
+import com.example.springmvc.services.UsuarioServiceImpl;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+import java.util.List;
+
+@RestController
+@RequestMapping("/usuarios")
 public class UsuarioController {
-    private UsuarioService usuarioService= new UsuarioService();
+    private final UsuarioService usuarioService;
 
+    @Autowired
+    public UsuarioController(UsuarioService usuarioService) {
+        this.usuarioService = usuarioService;
+    }
 
     @GetMapping("/crear")
-    @ResponseBody
-    public Usuario crearUsuario(){
-        return usuarioService.crearUsuario();
+    public Usuario crearUsuario(@RequestParam("nombre") String nombre, @RequestParam("edad") int edad){
+        return usuarioService.create(nombre, edad);
     }
 
-    @GetMapping("/crear2")
-    @ResponseBody
-    public Usuario crearUsuario2(@RequestParam("edad") int edadUsuario){
-        return new Usuario("Ian",edadUsuario);
+    @GetMapping("/listar")
+    public List<Usuario> crearUsuario(){
+        return usuarioService.list();
     }
+
 
 
 }

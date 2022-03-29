@@ -2,10 +2,11 @@ package com.example.springmvc.services;
 
 import com.example.springmvc.dominio.Usuario;
 
-public class UsuarioService {
+import java.util.List;
 
-    public Usuario crearUsuario(){
-        Usuario u = new Usuario("Erick",25);
-        return u;
-    }
+public interface UsuarioService {
+
+    public Usuario create(String nombre,int edad);
+    public List<Usuario> list();
+
 }
