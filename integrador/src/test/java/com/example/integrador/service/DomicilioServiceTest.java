@@ -59,6 +59,8 @@ class DomicilioServiceTest {
         System.out.println(domicilios);
     }
 
+
+    @Test
     void deleteFromTo(){
 
         Domicilio d1= domicilioService.createDomicilio(new Domicilio("Av Belgrano", 32413, "Resistencia", "Chaco"));

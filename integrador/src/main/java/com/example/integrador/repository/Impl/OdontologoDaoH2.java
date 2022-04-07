@@ -52,7 +52,7 @@ public class OdontologoDaoH2 implements IDAO<Odontologo> {
         try {
             Class.forName(DB_JDBC_DRIVER).newInstance();
             cn= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
-            ps= cn.prepareStatement("UPDATE ODONTOLOGOS SET nombre=?, apellido=?, matricula=? WHERE id=?)");
+            ps= cn.prepareStatement("UPDATE odontologos SET nombre=?, apellido=?, matricula=? WHERE id=?");
             ps.setString(1,odontologo.getNombre());
             ps.setString(2,odontologo.getApellido());
             ps.setInt(3,odontologo.getMatricula());
@@ -99,25 +99,19 @@ public class OdontologoDaoH2 implements IDAO<Odontologo> {
         PreparedStatement ps;
         Odontologo odontologo = null;
         try {
-            Class.forName(DB_JDBC_DRIVER).newInstance();
+            Class.forName(DB_JDBC_DRIVER);
             cn= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
-            ps= cn.prepareStatement("SELECT (id,nombre,apellido,matricula) FROM ODONTOLOGOS WHERE id=?");
+            ps= cn.prepareStatement("SELECT nombre,apellido,matricula FROM ODONTOLOGOS WHERE id=?");
             ps.setInt(1,id);
             ResultSet rs= ps.executeQuery();
             while(rs.next()){
-                odontologo=new Odontologo(
-                        rs.getInt("id"),
-                        rs.getString("nombre"),
-                        rs.getString("apellido"),
-                        rs.getInt("matricula")
-                );
+                String nombre=rs.getString("nombre");
+                String apellido=rs.getString("apellido");
+                int matricula=rs.getInt("matricula");
+                odontologo= new Odontologo(id,nombre,apellido,matricula);
             }
             ps.close();
         } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
             e.printStackTrace();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
@@ -133,15 +127,14 @@ public class OdontologoDaoH2 implements IDAO<Odontologo> {
         try {
             Class.forName(DB_JDBC_DRIVER).newInstance();
             cn= DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
-            ps= cn.prepareStatement("SELECT (id,nombre,apellido,matricula) FROM ODONTOLOGOS");
+            ps= cn.prepareStatement("SELECT id,nombre,apellido,matricula FROM ODONTOLOGOS");
             ResultSet rs= ps.executeQuery();
             while(rs.next()){
-                odontologos.add(new Odontologo(
-                        rs.getInt("id"),
-                        rs.getString("nombre"),
-                        rs.getString("apellido"),
-                        rs.getInt("matricula")
-                ));
+                int id=rs.getInt("id");
+                String nombre=rs.getString("nombre");
+                String apellido=rs.getString("apellido");
+                int matricula=rs.getInt("matricula");
+                odontologos.add(new Odontologo(id,nombre,apellido,matricula));
             }
             ps.close();
         } catch (ClassNotFoundException e) {
