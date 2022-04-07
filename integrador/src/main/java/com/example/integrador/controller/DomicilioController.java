@@ -35,7 +35,6 @@ public class DomicilioController {
     }
 
     @GetMapping("/obtener/{id}")
-    @ResponseBody
     public ResponseEntity<Domicilio> getDomicilio(@PathVariable("id") int id){
         return ResponseEntity.ok(domicilioService.get(id));
     }
@@ -46,12 +45,13 @@ public class DomicilioController {
     }
 
     @DeleteMapping("/eliminar")
+    @ResponseBody
     public String deleteDomicilio(@RequestParam int firstId, @RequestParam int lastId){
         domicilioService.deleteFromTo(firstId,lastId);
         return "Bien";
     }
 
-    @PutMapping("/actualizar-domicilio")
+    @PutMapping("/actualizar")
     public ResponseEntity<Domicilio> actualizarDomicilio(@RequestBody Domicilio domicilio)
     {
         ResponseEntity<Domicilio> response;
