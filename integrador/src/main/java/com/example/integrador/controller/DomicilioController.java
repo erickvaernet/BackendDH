@@ -29,7 +29,6 @@ public class DomicilioController {
     }
 
     @GetMapping("/listar")
-    @ResponseBody
     public ResponseEntity<List<Domicilio>> listDomicilio(){
         return ResponseEntity.ok(domicilioService.list());
     }
@@ -45,10 +44,9 @@ public class DomicilioController {
     }
 
     @DeleteMapping("/eliminar")
-    @ResponseBody
-    public String deleteDomicilio(@RequestParam int firstId, @RequestParam int lastId){
+    public ResponseEntity<String> deleteDomicilio(@RequestParam int firstId, @RequestParam int lastId){
         domicilioService.deleteFromTo(firstId,lastId);
-        return "Bien";
+        return ResponseEntity.ok("Bien");
     }
 
     @PutMapping("/actualizar")

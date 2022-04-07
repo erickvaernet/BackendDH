@@ -16,15 +16,13 @@ public class OdontologosController {
     private OdontologoService odontologoService= new OdontologoService(new OdontologoDaoH2());
 
     @GetMapping("/obtener/{id}")
-    @ResponseBody
-    public Odontologo getOdontologo(@PathVariable("id") int id){
-        return odontologoService.get(id);
+    public ResponseEntity<Odontologo> getOdontologo(@PathVariable("id") int id){
+        return ResponseEntity.ok(odontologoService.get(id));
     }
 
     @GetMapping("/listar")
-    @ResponseBody
-    public List<Odontologo> listOdontologos() {
-        return odontologoService.list();
+    public ResponseEntity <List<Odontologo>> listOdontologos() {
+        return ResponseEntity.ok(odontologoService.list());
     }
 
     @PostMapping("/registrar")
@@ -45,9 +43,8 @@ public class OdontologosController {
     }
 
     @PutMapping("/actualizar")
-    @ResponseBody
-    public Odontologo updateOdontologo(@RequestBody Odontologo odontologo){
-        return odontologoService.update(odontologo);
+    public ResponseEntity<Odontologo> updateOdontologo(@RequestBody Odontologo odontologo){
+        return ResponseEntity.ok(odontologoService.update(odontologo));
     }
 
 }
