@@ -30,3 +30,19 @@ Repositorio para almacenar ejercicios de Backend. Orden Cronológico de las carp
 
 6. #### **springMVC**
   Contiene prácticas y primeros pasos en Spring aplicando MVC
+
+7. #### **Odontologo**
+  Contiene prácticas y primeros pasos en Spring aplicando MVC
+
+8. #### **demoSpringTemplate**
+  Contiene prácticas y primeros pasos en Spring aplicando MVC
+
+9. #### **apiTerceros**
+  Contiene prácticas en Spring consumiendo APIs de terceros
+
+
+100. #### **Integrador**
+  Contiene el proyecto integrador de Backend basado en Spring 
+
+
+
