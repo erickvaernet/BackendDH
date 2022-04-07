@@ -13,3 +13,8 @@ CREATE TABLE IF NOT EXISTS PACIENTES
              fecha_ingreso DATE,
              domicilio_id INT,
              foreign key (domicilio_id) references DOMICILIOS(id));
+CREATE TABLE IF NOT EXISTS ODONTOLOGOS
+            (id INT PRIMARY KEY AUTO_INCREMENT,
+             nombre VARCHAR(255),
+             apellido VARCHAR(255),
+             matricula INT);

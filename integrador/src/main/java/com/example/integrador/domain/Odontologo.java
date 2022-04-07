@@ -2,13 +2,20 @@ package com.example.integrador.domain;
 
 public class Odontologo {
     public int id;
-    public String apellido;
     public String nombre;
+    public String apellido;
     public int matricula;
 
-    public Odontologo(String apellido, String nombre, int matricula) {
-        this.apellido = apellido;
+    public Odontologo(int id, String nombre, String apellido, int matricula) {
+        this.id = id;
         this.nombre = nombre;
+        this.apellido = apellido;
+        this.matricula = matricula;
+    }
+
+    public Odontologo(String nombre, String apellido, int matricula) {
+        this.nombre = nombre;
+        this.apellido = apellido;
         this.matricula = matricula;
     }
 
