@@ -1,46 +1,67 @@
 package com.example.integrador.controller;
 
 import com.example.integrador.domain.Domicilio;
-import com.example.integrador.domain.Paciente;
 import com.example.integrador.repository.Impl.DomicilioDaoH2;
 import com.example.integrador.service.DomicilioService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
+@RequestMapping("/domicilios")
 public class DomicilioController {
     DomicilioService domicilioService= new DomicilioService(new DomicilioDaoH2());
 
-    @GetMapping("/crear-domicilio")
+   /* @PostMapping("/crear-domicilio")
     public Domicilio createDomicilio(@RequestParam String calle, @RequestParam int numero,
                                      @RequestParam String localidad, @RequestParam String provincia)
     {
         return domicilioService.createDomicilio(new Domicilio(calle,numero,localidad,provincia));
+    }*/
+
+    @PostMapping("/registrar")
+    public ResponseEntity<Domicilio> createDomicilio(@RequestBody Domicilio domicilio)
+    {
+        System.out.println(domicilio);
+        return ResponseEntity.ok(domicilioService.createDomicilio(domicilio));
     }
 
-    @GetMapping("/listar-domicilios")
-    public List<Domicilio> listDomicilio(){
-        return domicilioService.list();
+    @GetMapping("/listar")
+    @ResponseBody
+    public ResponseEntity<List<Domicilio>> listDomicilio(){
+        return ResponseEntity.ok(domicilioService.list());
     }
 
-    @GetMapping("/obtener-domicilio")
-    public Domicilio getDomicilio(@RequestParam int id){
-        return domicilioService.get(id);
+    @GetMapping("/obtener/{id}")
+    @ResponseBody
+    public ResponseEntity<Domicilio> getDomicilio(@PathVariable("id") int id){
+        return ResponseEntity.ok(domicilioService.get(id));
     }
 
-    @GetMapping("/eliminar-domicilio")
-    public void deleteDomicilio(@RequestParam int id){
+    @DeleteMapping("/eliminar/{id}")
+    public void deleteDomicilio(@PathVariable("id") int id){
         domicilioService.delete(id);
     }
 
-    @GetMapping("/actualizar-domicilio")
-    public Domicilio createDomicilio(@RequestParam int id,@RequestParam String calle, @RequestParam int numero,
-                                     @RequestParam String localidad, @RequestParam String provincia)
+    @DeleteMapping("/eliminar")
+    public String deleteDomicilio(@RequestParam int firstId, @RequestParam int lastId){
+        domicilioService.deleteFromTo(firstId,lastId);
+        return "Bien";
+    }
+
+    @PutMapping("/actualizar-domicilio")
+    public ResponseEntity<Domicilio> actualizarDomicilio(@RequestBody Domicilio domicilio)
     {
-        return domicilioService.update(new Domicilio(id,calle,numero,localidad,provincia));
+        ResponseEntity<Domicilio> response;
+
+        if(domicilio.getId() > 0 && domicilioService.get(domicilio.getId()) != null)
+            response=ResponseEntity.ok(domicilioService.update(domicilio));
+        else
+            response=ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+
+        return response;
     }
 }
 

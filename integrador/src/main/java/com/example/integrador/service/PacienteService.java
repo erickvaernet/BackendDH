@@ -32,4 +32,10 @@ public class PacienteService {
         return this.pacienteDao.list();
     };
 
+    /*public void deleteFromTo(int firstId,int lastId){
+        for (int id = firstId; id <= lastId; id++) {
+            this.pacienteDao.delete(id);
+        }
+    };*/
+
 }

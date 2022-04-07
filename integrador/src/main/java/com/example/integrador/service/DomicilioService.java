@@ -32,6 +32,12 @@ public class DomicilioService {
         return this.domicilioDao.list();
     };
 
+    public void deleteFromTo(int firstId,int lastId){
+        for (int id = firstId; id <= lastId; id++) {
+            this.domicilioDao.delete(id);
+        }
+    };
+
 
 
 

@@ -58,4 +58,16 @@ class DomicilioServiceTest {
         Assertions.assertTrue(domicilios.size() > 0);
         System.out.println(domicilios);
     }
+
+    void deleteFromTo(){
+
+        Domicilio d1= domicilioService.createDomicilio(new Domicilio("Av Belgrano", 32413, "Resistencia", "Chaco"));
+        Domicilio d2= domicilioService.createDomicilio(new Domicilio("Av Galo", 32413, "Resistencia", "Chaco"));
+        Domicilio d3=domicilioService.createDomicilio(new Domicilio("Av Wilde", 1123, "Resistencia", "Chaco"));
+
+        domicilioService.deleteFromTo(d1.getId(),d3.getId());
+        Assertions.assertNull(domicilioService.get(d1.getId()));
+        Assertions.assertNull(domicilioService.get(d2.getId()));
+        Assertions.assertNull(domicilioService.get(d3.getId()));
+    }
 }

@@ -61,4 +61,18 @@ class PacienteServiceTest {
         Assertions.assertNotNull(pacienteService.list());
         Assertions.assertTrue(pacienteService.list().size()>0);
     }
+
+    /*@Test
+    void deleteFromTo(){
+
+        Domicilio d1= domicilioService.createDomicilio(new Domicilio("Av Belgrano", 32413, "Resistencia", "Chaco"));
+        Domicilio d2=domicilioService.createDomicilio(new Domicilio("Av Wilde", 1123, "Resistencia", "Chaco"));
+
+        Paciente p5=pacienteService.createPaciente(new Paciente("Erick","Vaernet","email@mail.com",3773333, LocalDate.now(),d1));
+        pacienteService.createPaciente(new Paciente("Ian","Pochon","poail@mail.com",4723763, LocalDate.now(),d2));
+        Paciente p6=pacienteService.createPaciente(new Paciente("Ian","Pochon","poail@mail.com",4723763, LocalDate.now(),d2));
+        pacienteService.deleteFromTo(p5.getId(),p6.getId());
+        Assertions.assertNull(pacienteService.get(p5.getId()));
+        Assertions.assertNull(pacienteService.get(p6.getId()));
+    }*/
 }
