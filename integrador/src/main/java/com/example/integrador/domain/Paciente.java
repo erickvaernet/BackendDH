@@ -31,7 +31,7 @@ public class Paciente {
         this.domicilio = domicilio;
     }
 
-    /*public Paciente(int id,String nombre, String apellido, String email, long dni, LocalDate fechaIngreso, Domicilio domicilio) {
+    public Paciente(int id,String nombre, String apellido, String email, long dni, LocalDate fechaIngreso, Domicilio domicilio) {
         this.id = id;
         this.apellido = apellido;
         this.nombre = nombre;
@@ -39,7 +39,7 @@ public class Paciente {
         this.dni = dni;
         this.fechaIngreso = fechaIngreso;
         this.domicilio = domicilio;
-    }*/
+    }
 
 
     public int getId() {

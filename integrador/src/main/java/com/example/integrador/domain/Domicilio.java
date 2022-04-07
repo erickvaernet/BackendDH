@@ -24,13 +24,13 @@ public class Domicilio {
         this.provincia = provincia;
     }
 
-   /* public Domicilio(int id, String calle, int numero, String localidad, String provincia) {
+    public Domicilio(int id, String calle, int numero, String localidad, String provincia) {
         this.id = id;
         this.calle = calle;
         this.numero = numero;
         this.localidad = localidad;
         this.provincia = provincia;
-    }*/
+    }
 
     public int getId() {
         return id;
