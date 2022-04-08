@@ -1,8 +1,9 @@
 package com.example.apiTerceros.controllers;
 
+import com.mashape.unirest.http.HttpResponse;
+import com.mashape.unirest.http.JsonNode;
 import com.mashape.unirest.http.Unirest;
 import com.mashape.unirest.http.exceptions.UnirestException;
-import org.apache.http.HttpResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
@@ -19,10 +20,11 @@ public class TercerosController {
     }
 
     @GetMapping("/unirest/{name}")
-    public ResponseEntity<String> getCountry2(@PathVariable String name) throws UnirestException {
-        String response=null;
+    @ResponseBody
+    public String getCountry2(@PathVariable String name) throws UnirestException {
+        HttpResponse<JsonNode> response=null;
 
-        response=Unirest.get("https://restcountries.com/v3.1/name/"+name).asString().toString();
-        return ResponseEntity.ok();
+        response=Unirest.get("https://restcountries.com/v3.1/name/"+name).asJson();
+        return response.getBody().toString();
     }
 }
