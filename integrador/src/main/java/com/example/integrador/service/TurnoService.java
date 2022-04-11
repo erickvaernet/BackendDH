@@ -19,4 +19,15 @@ public class TurnoService {
     public List<Turno> list(){
         return turnoRepository.list();
     }
+    public void eliminarTurno(int id){
+        turnoRepository.delete(id);
+    }
+
+    public Turno getTurno(int id){
+        return  turnoRepository.get(id);
+    }
+
+    public Turno updateTurno(Turno turno){
+        return turnoRepository.update(turno);
+    }
 }
