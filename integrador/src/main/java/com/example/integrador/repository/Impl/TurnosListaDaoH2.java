@@ -2,11 +2,13 @@ package com.example.integrador.repository.Impl;
 
 import com.example.integrador.domain.Turno;
 import com.example.integrador.repository.IDAO;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Repository
 public class TurnosListaDaoH2 implements IDAO<Turno>{
 
     private List<Turno> turnos;

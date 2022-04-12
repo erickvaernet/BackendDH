@@ -4,14 +4,22 @@ import com.example.integrador.domain.Domicilio;
 import com.example.integrador.domain.Odontologo;
 import com.example.integrador.repository.Impl.DomicilioDaoH2;
 import com.example.integrador.repository.Impl.OdontologoDaoH2;
+import org.junit.FixMethodOrder;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.MethodSorters;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit4.SpringRunner;
 
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@FixMethodOrder(MethodSorters.NAME_ASCENDING)
+@RunWith(SpringRunner.class)
+@SpringBootTest
 class OdontologoServiceTest {
     public static OdontologoService odontologoService= new OdontologoService(new OdontologoDaoH2());
 

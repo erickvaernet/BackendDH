@@ -21,35 +21,35 @@ public class DomicilioController {
         return domicilioService.createDomicilio(new Domicilio(calle,numero,localidad,provincia));
     }*/
 
-    @PostMapping("/registrar")
+    @PostMapping
     public ResponseEntity<Domicilio> createDomicilio(@RequestBody Domicilio domicilio)
     {
         System.out.println(domicilio);
         return ResponseEntity.ok(domicilioService.createDomicilio(domicilio));
     }
 
-    @GetMapping("/listar")
+    @GetMapping()
     public ResponseEntity<List<Domicilio>> listDomicilio(){
         return ResponseEntity.ok(domicilioService.list());
     }
 
-    @GetMapping("/obtener/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Domicilio> getDomicilio(@PathVariable("id") int id){
         return ResponseEntity.ok(domicilioService.get(id));
     }
 
-    @DeleteMapping("/eliminar/{id}")
+    @DeleteMapping("/{id}")
     public void deleteDomicilio(@PathVariable("id") int id){
         domicilioService.delete(id);
     }
 
-    @DeleteMapping("/eliminar")
+    @DeleteMapping
     public ResponseEntity<String> deleteDomicilio(@RequestParam int firstId, @RequestParam int lastId){
         domicilioService.deleteFromTo(firstId,lastId);
         return ResponseEntity.ok("Bien");
     }
 
-    @PutMapping("/actualizar")
+    @PutMapping
     public ResponseEntity<Domicilio> actualizarDomicilio(@RequestBody Domicilio domicilio)
     {
         ResponseEntity<Domicilio> response;

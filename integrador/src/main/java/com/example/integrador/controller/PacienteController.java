@@ -7,6 +7,7 @@ import com.example.integrador.repository.Impl.PacienteDaoH2;
 import com.example.integrador.service.DomicilioService;
 import com.example.integrador.service.PacienteService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -16,12 +17,12 @@ import java.util.List;
 public class PacienteController {
     PacienteService pacienteService= new PacienteService(new PacienteDaoH2());
 
-    @GetMapping("/obtener-paciente")
-    public Paciente getPaciente(@RequestParam int id){
+    @GetMapping("/{id}")
+    public Paciente getPaciente(@PathVariable int id){
         return pacienteService.get(id);
     }
 
-    @GetMapping("/listar-pacientes")
+    @GetMapping
     public List<Paciente> getPaciente(){
         return pacienteService.list();
     }

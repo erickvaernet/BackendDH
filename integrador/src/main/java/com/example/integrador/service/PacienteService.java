@@ -2,9 +2,11 @@ package com.example.integrador.service;
 
 import com.example.integrador.domain.Paciente;
 import com.example.integrador.repository.IDAO;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class PacienteService {
     private IDAO<Paciente> pacienteDao;
 

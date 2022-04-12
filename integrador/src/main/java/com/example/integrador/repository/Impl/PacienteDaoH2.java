@@ -5,12 +5,14 @@ import com.example.integrador.domain.Paciente;
 import com.example.integrador.repository.IDAO;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.springframework.stereotype.Repository;
 
 import java.sql.*;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+@Repository
 public class PacienteDaoH2 implements IDAO<Paciente> {
     private static final Logger logger= LogManager.getLogger(PacienteDaoH2.class);
     private static final String DB_JDBC_DRIVER="org.h2.Driver";
