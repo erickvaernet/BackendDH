@@ -40,6 +40,8 @@ Repositorio para almacenar ejercicios de Backend. Orden Cronológico de las carp
 9. #### **apiTerceros**
   Contiene prácticas en Spring consumiendo APIs de terceros
 
+10. #### **jpaHibernate**
+  Contiene proyecto con prácticas de los temas Hibernate y JPA
 
 100. #### **Integrador**
   Contiene el proyecto integrador de Backend basado en Spring 
