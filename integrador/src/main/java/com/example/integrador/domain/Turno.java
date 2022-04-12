@@ -11,6 +11,19 @@ public class Turno {
     public Turno() {
     }
 
+    public Turno(int id, Paciente paciente, Odontologo odontologo, LocalDate date) {
+        this.id = id;
+        this.paciente = paciente;
+        this.odontologo = odontologo;
+        this.date = date;
+    }
+
+    public Turno(Paciente paciente, Odontologo odontologo, LocalDate date) {
+        this.paciente = paciente;
+        this.odontologo = odontologo;
+        this.date = date;
+    }
+
     public int getId() {
         return id;
     }
