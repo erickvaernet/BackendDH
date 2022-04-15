@@ -1,0 +1,322 @@
+[33mcommit 350a6adc90551420add4f717fdb950696f6e22c8[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Apr 12 14:44:55 2022 -0300
+
+    readme.md con jpaHibernate
+
+[33mcommit 929c99592b7c9f47479efe7420a22480bc56e2f1[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Apr 12 14:30:14 2022 -0300
+
+    En funcionamiento ejemplo jpaHibernate Student
+
+[33mcommit edeca4bda7a7a2d6f917a24a86a853e4fefdff4f[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Apr 12 12:36:21 2022 -0300
+
+    En funcionamiento jpaHibernate
+
+[33mcommit 6029d56f5d5bf658147fd64a53d3ed04a5b4dbfc[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Apr 12 12:20:55 2022 -0300
+
+    Creado proyecto jpaHibernate
+
+[33mcommit 009b364ae6c968775da4bda5f9984980eb6d4c74[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Apr 12 12:20:26 2022 -0300
+
+    Creado proyecto jpaHibernate
+
+[33mcommit 00631f2fcc8830858c8edef7453c366d97acd6a9[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Apr 11 22:43:52 2022 -0300
+
+    Integrador: Se agregaron metodos a TurnoController
+
+[33mcommit 3fde888a1beb72fb1b0bd9c961f93f7e09a49291[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Apr 11 21:14:29 2022 -0300
+
+    Integrador: Se agregaron anotaciones @Repository, @Autowired, @Service
+
+[33mcommit c1fe612553427a48f02a5102ef9d8d92b8ff0fb7[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Apr 11 20:51:05 2022 -0300
+
+    Integrador: Agregado eliminar,obtener y registrar turnos en TurnoController
+
+[33mcommit d686b487a1b7c24e55e2566439ee870add9371d3[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Fri Apr 8 14:11:14 2022 -0300
+
+    Se actualizo  apiTerceros con unirest
+
+[33mcommit c22c9b0248923a4a26c569771cf5ccc8e376959a[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Fri Apr 8 12:22:50 2022 -0300
+
+    apitercero
+
+[33mcommit 7816e740eb42c240af7056918566a7500a658c7c[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 20:27:20 2022 -0300
+
+    Readme.md actualizado
+
+[33mcommit 81e3ac1eebe2a56716b5308b41367bc1d4214f5b[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 20:26:02 2022 -0300
+
+    Se actualizo el README.md y se creo apiTerceros como proyecto
+
+[33mcommit 7f006aa5be76621e96ef8d34c5d56c8d9f2f1dfd[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 17:22:04 2022 -0300
+
+    Integrador:
+    Agregado Turno, TurnosListaDaoH2, TurnoController, TurnoService
+
+[33mcommit 79dc23151c84031ed4b78a2edcf521c9673ef469[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 15:11:45 2022 -0300
+
+    Integrador:
+    *Cambios Mayores: Se creo DTO de odontologo y su test correpondiente
+    *Cambios menores: Se reemplazo @ResponseBody por ResponseEntity en todos los controllers
+
+[33mcommit d685377f0a48e57272eda70e6a11789b64753d97[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 14:32:39 2022 -0300
+
+    Integrador: Se agrego dependencia Jackson 2.13.1 en POM.xml.
+
+[33mcommit 33def29a7c063c2e97ef99464add103b08cab934[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 14:23:30 2022 -0300
+
+    Integrador: Se agrego OdontologoController y se testearon los endpoints con Postman.
+
+[33mcommit bdf518fe6b597c82464cc07a16d0e40f30eb05b0[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 12:39:25 2022 -0300
+
+    Integrador: Se arreglaron sentencias SQL en metodos get y list en OdontologoDaoH2.Se agregaron test para OdontologoService.
+
+[33mcommit 6bc9a56d4a5d3fd6d6979838fe43df128cfd5aaa[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Apr 7 09:50:48 2022 -0300
+
+    Integrador: Se agregaron OdontologoDaoH2 y OdontologoService
+
+[33mcommit 4016b7d8cc90ca48dc8e36e895399bed3fe13863[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Apr 6 21:42:01 2022 -0300
+
+    Integrador: agregado Odontologo, se descomentaron los constructores de Paciente y Domicilio
+
+[33mcommit f3b6995c552419fd1ce5ae521011578b6ca27f58[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Apr 6 21:20:27 2022 -0300
+
+    Integrador actualizado, se puede hacer CRUD mediante APIs
+
+[33mcommit d62ce5c5ac42317a25b3121f18946154c3af38ca[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Apr 6 13:35:28 2022 -0300
+
+    Agregados Odontologo,demoSpringTemplate e Integrador
+
+[33mcommit 51cca9b0d0e8e2e5dcc60bfb1d9a26e201a14499[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 29 12:52:37 2022 -0300
+
+    Actualizado springMVC
+
+[33mcommit 2956f38565498295fb097c684ee3c5fc787e01a5[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 29 11:47:59 2022 -0300
+
+    agregado proyecto springMVc y actualizado el .md
+
+[33mcommit 7566845850e8fc0b5cd13f388feaa3b171e8e4f5[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 22:20:23 2022 -0300
+
+    se elimino materiasMaven
+
+[33mcommit 1656cb5ca0fcde5adc3d139a795291490c2aa07d[m
+Author: Erick Adriel Vaernet <62777476+erickvaernet@users.noreply.github.com>
+Date:   Mon Mar 28 22:19:23 2022 -0300
+
+    Create README.md
+    
+    Se actualizo README.MD hasta "primerProyectoSpring"
+
+[33mcommit 27b3379bf65b0cc98072e62deb46abcdeec30cbc[m
+Author: Erick Adriel Vaernet <62777476+erickvaernet@users.noreply.github.com>
+Date:   Mon Mar 28 22:04:55 2022 -0300
+
+    Update README.md
+
+[33mcommit 436608d5fcf3ef8aff8e69a9e174b11a5c0ab97b[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 22:03:14 2022 -0300
+
+    reestructuracion 3
+
+[33mcommit 92173a30c8e14e0c1493995271ce72cdc4b5cc3c[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 22:02:02 2022 -0300
+
+    reestructuracion2
+
+[33mcommit c01c548eff43b3f45585885eebbf11097a14861f[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 22:00:57 2022 -0300
+
+    asdasdas
+
+[33mcommit 7c72df63f1f37527bd116e9d34db927de1b00af0[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 22:00:33 2022 -0300
+
+    asdasd
+
+[33mcommit 92e1cfcac9c8df018c388a280ed3f30dc55f4474[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 21:59:09 2022 -0300
+
+    asda
+
+[33mcommit cfd159170d1a4fc23ced24f035f391162071138a[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Mon Mar 28 21:31:39 2022 -0300
+
+    Reestructuraciond e carpetas y proyectos
+
+[33mcommit c5d123eef243ed00251783660a8a7650c3dd931b[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 22 14:04:19 2022 -0300
+
+    .
+
+[33mcommit 697c47803bd8b6430eb97f6fde062de6faea39eb[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 22 11:38:24 2022 -0300
+
+    Serializacion como tema nuevo
+
+[33mcommit 1fd43946b04b53e81c5652b29d1f4632ca0b40f2[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 17 18:30:54 2022 -0300
+
+    DAO Ejemplo2 finalizado;
+
+[33mcommit 48573553810270acafa08bc099929a068f19575f[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 17 17:26:11 2022 -0300
+
+    DAO 2Ejemplos;
+
+[33mcommit c27810002dc45f0f6b048a25abeec683e26cfae6[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 17:29:06 2022 -0300
+
+    JDBC completo;
+
+[33mcommit 349059ea28156ad4a3089f4d2159b7114287e9c2[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 15:25:30 2022 -0300
+
+    JDBC completo
+
+[33mcommit 24b3d58094dad7a84638def018f4d3122e387064[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 15:25:16 2022 -0300
+
+    Agregado 3er ejemplo a JDBC
+
+[33mcommit 823b45b306e8790064015f8d1e390d975113e504[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 14:29:48 2022 -0300
+
+    Agregado 3er ejemplo a JDBC
+
+[33mcommit 16c8def0f2d479aef81f72591d24f335430093ea[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 12:56:30 2022 -0300
+
+    Agregado 2do ejemplo a JDBC
+
+[33mcommit 4f38467e29c048f28365b7ae9d1e8c0724c1e9e9[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Thu Mar 10 12:03:44 2022 -0300
+
+    Iniciando JDBC
+
+[33mcommit f8e2628b06dffb849e6b269e9213d34708529d9a[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Mar 9 13:12:17 2022 -0300
+
+    Log4j Ejemplo construido
+
+[33mcommit f77d470325610499b2275acbd66dd28789fbef77[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Mar 9 12:19:13 2022 -0300
+
+    Agregada Carpeta de log4j y el archivo log4j.properties
+
+[33mcommit 41ddac31d7df3381509644640761811a46c7ebec[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Wed Mar 9 12:19:01 2022 -0300
+
+    Agregada Carpeta de log4j y el archivo log4j.properties
+
+[33mcommit e6a70f2f9b536d2cdebb1100514743fe24f73056[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 13:38:22 2022 -0300
+
+    Agregado 3er ejemplo a Flyweight2
+
+[33mcommit 1e0009f63a3ba25d49418d142d5d09815026c60d[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 13:38:14 2022 -0300
+
+    Agregado 3er ejemplo a Flyweight
+
+[33mcommit 5cb9435034ecd8b85b019c5ec377936a2004258c[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 13:00:12 2022 -0300
+
+    Agregado 3er ejemplo a Flyweight
+
+[33mcommit f5088d2149a314cc5be8e158f622ce987f21bd93[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 12:28:02 2022 -0300
+
+    Agregado 2do ejemplo a Flyweight
+
+[33mcommit 57216187353271f0c6545216778025269ddf3cf0[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 12:27:52 2022 -0300
+
+    Agregado 2do ejemplo a Flyweight
+
+[33mcommit f7f7c524958c9dce4b9698105240d0baf4a910ec[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 11:50:59 2022 -0300
+
+    Reacomodo de Carpetas
+
+[33mcommit 4a9f93b87945ddf683da510036a54495ca06162f[m
+Author: Erick Adriel Vaernet <62777476+erickvaernet@users.noreply.github.com>
+Date:   Tue Mar 8 11:44:31 2022 -0300
+
+    Create README.md
+
+[33mcommit 0928073f0bd5271b9f5a398c2a2cd578180c56d0[m
+Author: Erick Adriel Vaernet <erickadrielnet@gmail.com>
+Date:   Tue Mar 8 11:42:21 2022 -0300
+
+    first

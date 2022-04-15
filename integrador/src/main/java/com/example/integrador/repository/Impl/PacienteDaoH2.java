@@ -21,6 +21,8 @@ public class PacienteDaoH2 implements IDAO<Paciente> {
     private static final String DB_PASSWORD="";
     private DomicilioDaoH2 domicilioDaoH2=new DomicilioDaoH2();
 
+    
+
     private Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName(DB_JDBC_DRIVER);
         return DriverManager.getConnection(DB_URL,DB_USER,DB_PASSWORD);
