@@ -25,6 +25,4 @@ public class Appointment {
     @Column(name = "date_time",nullable = false)
     private LocalDateTime dateTime;
 
-
-
 }
