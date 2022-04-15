@@ -1,4 +1,4 @@
-package com.example.integradorV2.Models;
+package com.example.integradorV2.Entities;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
