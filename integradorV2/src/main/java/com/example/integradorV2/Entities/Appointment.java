@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 @NoArgsConstructor
 @Getter
@@ -25,4 +26,16 @@ public class Appointment {
     @Column(name = "date_time",nullable = false)
     private LocalDateTime dateTime;
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Appointment that = (Appointment) o;
+        return patient.equals(that.patient) && dentist.equals(that.dentist) && dateTime.equals(that.dateTime);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(patient, dentist, dateTime);
+    }
 }

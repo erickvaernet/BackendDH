@@ -6,6 +6,7 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
+import java.util.Set;
 
 @NoArgsConstructor
 @Getter
@@ -23,5 +24,5 @@ public class Dentist {
     @Column(nullable = false, name = "last_name")
     private String lastName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "dentist",fetch = FetchType.LAZY)
-    private List<Appointment> appointments;
+    private Set<Appointment> appointments;
 }

@@ -7,6 +7,7 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Set;
 
 @NoArgsConstructor
 @Getter
@@ -32,6 +33,6 @@ public class Patient {
     @JoinColumn(name = "address_id",referencedColumnName = "id", nullable = false)
     private Address address;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "patient", fetch = FetchType.LAZY)
-    private List<Appointment> appointments;
+    private Set<Appointment> appointments;
 
 }
