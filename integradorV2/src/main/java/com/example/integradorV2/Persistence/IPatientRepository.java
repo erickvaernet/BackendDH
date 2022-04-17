@@ -1,4 +1,6 @@
 package com.example.integradorV2.Persistence;
 
-public interface IPatientRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface IPatientRepository extends JpaRepository {
 }
