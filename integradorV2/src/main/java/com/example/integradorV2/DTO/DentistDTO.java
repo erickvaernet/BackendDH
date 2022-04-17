@@ -17,6 +17,6 @@ public class DentistDTO {
     private Integer licenseNumber;
     private String name;
     private String lastName;
-    private List<Appointment> appointments;
+    private Set<Appointment> appointments;
 
 }

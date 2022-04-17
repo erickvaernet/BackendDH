@@ -26,5 +26,5 @@ public class Dentist {
     private String lastName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "dentist",fetch = FetchType.LAZY)
     @JsonIgnore
-    private List<Appointment> appointments;
+    private Set<Appointment> appointments;
 }
