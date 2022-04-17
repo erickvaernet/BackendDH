@@ -20,7 +20,7 @@ class PatientServiceTest {
     @Test
     void save() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setDNI(415612);
+        patientDTO.setDni(415612);
         patientDTO.setName("Erick");
         patientDTO.setLastName("Vaernet");
         patientDTO.setEmail("erick@mail.com");
@@ -34,7 +34,7 @@ class PatientServiceTest {
     @Test
     void findById() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setDNI(52112);
+        patientDTO.setDni(52112);
         patientDTO.setName("Erick");
         patientDTO.setLastName("Vaernet");
         patientDTO.setEmail("erickk@mail.com");
@@ -58,7 +58,7 @@ class PatientServiceTest {
 
         //crear nuevo dentista y guardarlo
         PatientDTO patientDTO = new PatientDTO();
-        patientDTO.setDNI(dni);
+        patientDTO.setDni(dni);
         patientDTO.setName(name);
         patientDTO.setLastName(lastName);
         patientDTO.setEmail(email);
@@ -78,7 +78,7 @@ class PatientServiceTest {
         PatientDTO dt=patientService.findById(id);
         assertEquals(dt.getName(),newName);
         assertEquals(dt.getLastName(),lastName);
-        assertEquals(dt.getDNI(),dni);
+        assertEquals(dt.getDni(),dni);
         assertEquals(dt.getEmail(),email);
         assertEquals(dt.getEntryDate(),entryDate);
         assertEquals(dt.getAddress().getStreet(),address.getStreet());
@@ -88,7 +88,7 @@ class PatientServiceTest {
     @Test
     void deleteById() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setDNI(56112);
+        patientDTO.setDni(56112);
         patientDTO.setName("Erickkk");
         patientDTO.setLastName("Vaaernet");
         patientDTO.setEmail("eric2kk@mail.com");
@@ -104,7 +104,7 @@ class PatientServiceTest {
     @Test
     void findAll() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setDNI(561152);
+        patientDTO.setDni(561152);
         patientDTO.setName("Erkk");
         patientDTO.setLastName("Vernet");
         patientDTO.setEmail("erkk@mail.com");

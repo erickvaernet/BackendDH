@@ -35,7 +35,7 @@ public class PatientService implements IPatientService {
         //Comprobaciones
         if(patientDTO==null || patientToUpdate==null) return null;
         //Asignaciones
-        if(patientDTO.getDNI()!=null) patientToUpdate.setDNI(patientDTO.getDNI());
+        if(patientDTO.getDni()!=null) patientToUpdate.setDni(patientDTO.getDni());
         if(patientDTO.getName()!=null) patientToUpdate.setName(patientDTO.getName());
         if(patientDTO.getLastName()!=null) patientToUpdate.setLastName(patientDTO.getLastName());
         if(patientDTO.getEmail()!=null) patientToUpdate.setEmail(patientDTO.getEmail());

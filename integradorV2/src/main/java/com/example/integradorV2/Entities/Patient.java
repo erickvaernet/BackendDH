@@ -21,7 +21,7 @@ public class Patient {
     private Long id;
     //DNI No se declaró como unique ni se uso como id debido a que existen DNIs repetidos (aunque no deberian existir)
     @Column(nullable = false, name = "dni")
-    private Integer DNI;
+    private Integer dni;
     @Column(nullable = false)
     private String name;
     @Column(nullable = false,name = "last_name")

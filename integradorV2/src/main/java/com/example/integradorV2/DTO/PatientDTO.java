@@ -17,7 +17,7 @@ import java.util.Set;
 @ToString
 public class PatientDTO {
     private Long id;
-    private Integer DNI;
+    private Integer dni;
     private String name;
     private String lastName;
     private String email;
