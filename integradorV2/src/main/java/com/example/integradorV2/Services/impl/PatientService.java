@@ -9,7 +9,9 @@ import com.example.integradorV2.Services.IPatientService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 public class PatientService implements IPatientService {
     @Autowired
@@ -41,7 +43,8 @@ public class PatientService implements IPatientService {
 
     @Override
     public PatientDTO findById(Long id) {
-        return null;
+        Optional<Patient> patient= patientRepository.findById(id);
+        return patient.map(this::mapToDTO).orElse(null);
     }
 
     @Override
@@ -51,7 +54,12 @@ public class PatientService implements IPatientService {
 
     @Override
     public List<PatientDTO> findAll() {
-        return null;
+        List<PatientDTO> patientDTOList=new ArrayList<>();
+        patientRepository.findAll()
+                .forEach(
+                        (patient)->patientDTOList.add(mapToDTO(patient))
+                );
+        return patientDTOList;
     }
 
     private PatientDTO mapToDTO(Patient patient){
