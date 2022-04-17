@@ -10,10 +10,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.sql.DriverManager;
-import java.sql.SQLOutput;
-import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -34,10 +30,6 @@ class DentistServiceTest {
     }
 
     @Test
-    void update() {
-    }
-
-    @Test
     void findById() {
         DentistDTO dentistDTO= new DentistDTO();
         dentistDTO.setLicenseNumber(142344);
@@ -47,6 +39,25 @@ class DentistServiceTest {
         assertNotNull(dentistDTO);
         DentistDTO dt=dentistService.findById(1L);
         assertNotNull(dt);
+    }
+
+    @Test
+    void update() {
+        //crear nuevo dentista y guardarlo
+        DentistDTO dentistDTO= new DentistDTO();
+        dentistDTO.setLicenseNumber(12456);
+        dentistDTO.setName("Erick");
+        dentistDTO.setLastName("Vaernet");
+        dentistDTO=dentistService.save(dentistDTO);
+        //Asignar nuevo nombre
+        String newName="Ricardo";
+        dentistDTO.setName(newName);
+        //Obtenemos ID
+        long id=dentistDTO.getId();
+        //Actualizamos
+        dentistService.update(id,dentistDTO);
+        //Verificacion
+        assertEquals(dentistService.findById(id).getName(),newName);
     }
 
     @Test
@@ -62,7 +73,7 @@ class DentistServiceTest {
         dentistDTO.setLicenseNumber(7142344);
         dentistDTO.setName("Erickk");
         dentistDTO.setLastName("Vaaernet");
-        dentistDTO=dentistService.save(dentistDTO);
+        dentistService.save(dentistDTO);
         List<DentistDTO> dentistDTOList=dentistService.findAll();
         assertNotNull(dentistDTOList);
         assertTrue(dentistDTOList.size()>0);
