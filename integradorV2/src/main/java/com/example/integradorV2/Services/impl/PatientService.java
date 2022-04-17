@@ -23,8 +23,20 @@ public class PatientService implements IPatientService {
     }
 
     @Override
-    public PatientDTO update(Long id, PatientDTO obj) {
-        return null;
+    public PatientDTO update(Long id, PatientDTO patientDTO) {
+        PatientDTO patientToUpdate=findById(id);
+        //Comprobaciones
+        if(patientDTO==null || patientToUpdate==null) return null;
+        //Asignaciones
+        if(patientDTO.getDNI()!=null) patientToUpdate.setDNI(patientDTO.getDNI());
+        if(patientDTO.getName()!=null) patientToUpdate.setName(patientDTO.getName());
+        if(patientDTO.getLastName()!=null) patientToUpdate.setLastName(patientDTO.getLastName());
+        if(patientDTO.getEmail()!=null) patientToUpdate.setEmail(patientDTO.getEmail());
+        if(patientDTO.getEntryDate()!=null) patientToUpdate.setEntryDate(patientDTO.getEntryDate());
+        if(patientDTO.getAddress()!=null) patientToUpdate.setAddress(patientDTO.getAddress());
+        //Guardado
+        patientRepository.save(mapToEntity(patientToUpdate));
+        return patientToUpdate;
     }
 
     @Override
