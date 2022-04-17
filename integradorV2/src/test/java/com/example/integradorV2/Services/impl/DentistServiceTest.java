@@ -22,6 +22,7 @@ class DentistServiceTest {
         dentistDTO.setLastName("Vaernet");
         dentistDTO=dentistService.save(dentistDTO);
         assertNotNull(dentistDTO);
+        assertTrue(dentistDTO.getId()>0);
     }
 
     @Test
