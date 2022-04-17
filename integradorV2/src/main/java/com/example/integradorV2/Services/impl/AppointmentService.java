@@ -4,9 +4,11 @@ import com.example.integradorV2.DTO.AppointmentDTO;
 import com.example.integradorV2.Persistence.IAppointmentRepository;
 import com.example.integradorV2.Services.IAppointmentService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class AppointmentService implements IAppointmentService {
     @Autowired
     private IAppointmentRepository appointmentRepository;

@@ -13,8 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class PatientServiceTest {
+
     @Autowired
-    private  PatientService patientService;
+    public PatientService patientService;
 
     @Test
     void save() {
@@ -24,7 +25,7 @@ class PatientServiceTest {
         patientDTO.setLastName("Vaernet");
         patientDTO.setEmail("erick@mail.com");
         patientDTO.setEntryDate(LocalDate.now());
-        patientDTO.setAddress(new Address());
+        patientDTO.setAddress(new Address("Alvear",1653));
         patientDTO=patientService.save(patientDTO);
         assertNotNull(patientDTO);
         assertTrue(patientDTO.getId()>0);
@@ -33,9 +34,12 @@ class PatientServiceTest {
     @Test
     void findById() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setLicenseNumber(142344);
+        patientDTO.setDNI(52112);
         patientDTO.setName("Erick");
         patientDTO.setLastName("Vaernet");
+        patientDTO.setEmail("erickk@mail.com");
+        patientDTO.setEntryDate(LocalDate.now());
+        patientDTO.setAddress(new Address("Alvear",1653));
         patientDTO=patientService.save(patientDTO);
         assertNotNull(patientDTO);
         PatientDTO dt=patientService.findById(1L);
@@ -45,22 +49,28 @@ class PatientServiceTest {
     @Test
     void update() {
         //datos
-        int licenceNumber=34251;
-        String name="Pablo";
-        String lastName="Sanchez";
+        int dni = 3211;
+        String name = "Pablo";
+        String lastName = "Sanchez";
+        String email = "pablo@mail.com";
+        LocalDate entryDate = LocalDate.now();
+        Address address = new Address("Alvear",1653);
 
         //crear nuevo dentista y guardarlo
-        PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setLicenseNumber(licenceNumber);
+        PatientDTO patientDTO = new PatientDTO();
+        patientDTO.setDNI(dni);
         patientDTO.setName(name);
         patientDTO.setLastName(lastName);
+        patientDTO.setEmail(email);
+        patientDTO.setEntryDate(entryDate);
+        patientDTO.setAddress(address);
         patientDTO=patientService.save(patientDTO);
 
         //Asignar nuevo nombre
-        String newName="Ricardo";
+        String newName = "Ricardo";
         patientDTO.setName(newName);
         //Obtenemos ID
-        long id=patientDTO.getId();
+        long id = patientDTO.getId();
         //Actualizamos
         patientService.update(id,patientDTO);
 
@@ -68,22 +78,38 @@ class PatientServiceTest {
         PatientDTO dt=patientService.findById(id);
         assertEquals(dt.getName(),newName);
         assertEquals(dt.getLastName(),lastName);
-        assertEquals(dt.getLicenseNumber(),licenceNumber);
+        assertEquals(dt.getDNI(),dni);
+        assertEquals(dt.getEmail(),email);
+        assertEquals(dt.getEntryDate(),entryDate);
+        assertEquals(dt.getAddress().getStreet(),address.getStreet());
+        assertEquals(dt.getAddress().getNumber(),address.getNumber());
     }
 
     @Test
     void deleteById() {
-        patientService.deleteById(1L);
-        PatientDTO dt=patientService.findById(1L);
-        assertNull(dt);
+        PatientDTO patientDTO= new PatientDTO();
+        patientDTO.setDNI(56112);
+        patientDTO.setName("Erickkk");
+        patientDTO.setLastName("Vaaernet");
+        patientDTO.setEmail("eric2kk@mail.com");
+        patientDTO.setEntryDate(LocalDate.now());
+        patientDTO.setAddress(new Address("Alvear",133));
+        PatientDTO ptWithId= patientService.save(patientDTO);
+        long id= ptWithId.getId();
+        patientService.deleteById(id);
+        PatientDTO pt=patientService.findById(id);
+        assertNull(pt);
     }
 
     @Test
     void findAll() {
         PatientDTO patientDTO= new PatientDTO();
-        patientDTO.setLicenseNumber(7142344);
-        patientDTO.setName("Erickk");
-        patientDTO.setLastName("Vaaernet");
+        patientDTO.setDNI(561152);
+        patientDTO.setName("Erkk");
+        patientDTO.setLastName("Vernet");
+        patientDTO.setEmail("erkk@mail.com");
+        patientDTO.setEntryDate(LocalDate.now());
+        patientDTO.setAddress(new Address("Alvear",173));
         patientService.save(patientDTO);
         List<PatientDTO> patientDTOList=patientService.findAll();
         assertNotNull(patientDTOList);

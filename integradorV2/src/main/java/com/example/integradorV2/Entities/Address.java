@@ -26,4 +26,9 @@ public class Address {
     private String city;
     @Column(nullable = true)
     private String state;
+
+    public Address(String street, Integer number) {
+        this.street = street;
+        this.number = number;
+    }
 }
