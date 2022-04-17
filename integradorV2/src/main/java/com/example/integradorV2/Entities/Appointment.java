@@ -17,10 +17,10 @@ public class Appointment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "patient_id", referencedColumnName = "id")
     private Patient patient;
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne
     @JoinColumn(name = "dentist_id", referencedColumnName = "id")
     private Dentist dentist;
     @Column(name = "date_time",nullable = false)

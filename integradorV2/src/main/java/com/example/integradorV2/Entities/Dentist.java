@@ -1,5 +1,6 @@
 package com.example.integradorV2.Entities;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -24,5 +25,6 @@ public class Dentist {
     @Column(nullable = false, name = "last_name")
     private String lastName;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "dentist",fetch = FetchType.LAZY)
-    private Set<Appointment> appointments;
+    @JsonIgnore
+    private List<Appointment> appointments;
 }
