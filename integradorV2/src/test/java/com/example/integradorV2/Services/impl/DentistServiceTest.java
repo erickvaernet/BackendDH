@@ -43,12 +43,18 @@ class DentistServiceTest {
 
     @Test
     void update() {
+        //datos
+        int licenceNumber=34251;
+        String name="Pablo";
+        String lastName="Sanchez";
+
         //crear nuevo dentista y guardarlo
         DentistDTO dentistDTO= new DentistDTO();
-        dentistDTO.setLicenseNumber(12456);
-        dentistDTO.setName("Erick");
-        dentistDTO.setLastName("Vaernet");
+        dentistDTO.setLicenseNumber(licenceNumber);
+        dentistDTO.setName(name);
+        dentistDTO.setLastName(lastName);
         dentistDTO=dentistService.save(dentistDTO);
+
         //Asignar nuevo nombre
         String newName="Ricardo";
         dentistDTO.setName(newName);
@@ -56,8 +62,12 @@ class DentistServiceTest {
         long id=dentistDTO.getId();
         //Actualizamos
         dentistService.update(id,dentistDTO);
+
         //Verificacion
-        assertEquals(dentistService.findById(id).getName(),newName);
+        DentistDTO dt=dentistService.findById(id);
+        assertEquals(dt.getName(),newName);
+        assertEquals(dt.getLastName(),lastName);
+        assertEquals(dt.getLicenseNumber(),licenceNumber);
     }
 
     @Test

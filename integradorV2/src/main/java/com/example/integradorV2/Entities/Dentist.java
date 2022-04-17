@@ -1,17 +1,19 @@
 package com.example.integradorV2.Entities;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 @Table(name = "dentists")
 public class Dentist {

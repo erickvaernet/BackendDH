@@ -24,15 +24,16 @@ public class DentistService implements IDentistService {
         return mapToDTO(newDentist);
     }
 
+
     @Override
     public DentistDTO update(Long id, DentistDTO dentistDTO) {
         DentistDTO dentistToUpdate=findById(id);
         //Comprobaciones
         if(dentistDTO==null || dentistToUpdate==null) return null;
         //Asignaciones
-        if(dentistToUpdate.getName()!=null) dentistToUpdate.setName(dentistDTO.getName());
-        if(dentistToUpdate.getLastName()!=null) dentistToUpdate.setLastName(dentistDTO.getLastName());
-        if(dentistToUpdate.getLicenseNumber()!=null) dentistToUpdate.setLicenseNumber(dentistDTO.getLicenseNumber());
+        if(dentistDTO.getName()!=null) dentistToUpdate.setName(dentistDTO.getName());
+        if(dentistDTO.getLastName()!=null) dentistToUpdate.setLastName(dentistDTO.getLastName());
+        if(dentistDTO.getLicenseNumber()!=null) dentistToUpdate.setLicenseNumber(dentistDTO.getLicenseNumber());
         //Guardado
         dentistRepository.save(mapToEntity(dentistToUpdate));
         return dentistToUpdate;
