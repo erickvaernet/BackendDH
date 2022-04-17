@@ -1,11 +1,6 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
-import com.example.integradorV2.Entities.Dentist;
-import com.example.integradorV2.Services.impl.DentistService;
-import org.apache.catalina.Manager;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

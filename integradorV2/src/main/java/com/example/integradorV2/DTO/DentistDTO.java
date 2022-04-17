@@ -1,10 +1,8 @@
 package com.example.integradorV2.DTO;
 
 import com.example.integradorV2.Entities.Appointment;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.*;
 
-import java.util.List;
 import java.util.Set;
 
 @Getter
