@@ -17,6 +17,9 @@ public class PatientService implements IPatientService {
 
     @Override
     public PatientDTO save(PatientDTO patientDTO) {
+        Patient newPatient= mapToEntity(patientDTO);
+        patientRepository.save(newPatient);
+        return mapToDTO(newPatient);
     }
 
     @Override
@@ -39,10 +42,10 @@ public class PatientService implements IPatientService {
         return null;
     }
 
-    private DentistDTO mapToDTO(Dentist dentist){
-        return new ObjectMapper().convertValue(dentist, DentistDTO.class);
+    private PatientDTO mapToDTO(Patient patient){
+        return new ObjectMapper().convertValue(patient, PatientDTO.class);
     }
-    private Dentist mapToEntity(DentistDTO dentistDto){
-        return new ObjectMapper().convertValue(dentistDto, Dentist.class);
+    private Patient mapToEntity(PatientDTO patientDTO){
+        return new ObjectMapper().convertValue(patientDTO, Patient.class);
     }
 }
