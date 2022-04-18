@@ -35,7 +35,7 @@ public class DentistController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteOdontologo(@PathVariable Long id){
-        ResponseEntity<String> response=null;
+        ResponseEntity<String> response;
         if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         if(dentistService.findById(id)!=null){
             dentistService.deleteById(id);

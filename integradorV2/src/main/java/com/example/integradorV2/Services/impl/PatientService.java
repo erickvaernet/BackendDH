@@ -1,8 +1,6 @@
 package com.example.integradorV2.Services.impl;
 
-import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.DTO.PatientDTO;
-import com.example.integradorV2.Entities.Dentist;
 import com.example.integradorV2.Entities.Patient;
 import com.example.integradorV2.Persistence.IPatientRepository;
 import com.example.integradorV2.Services.IPatientService;
