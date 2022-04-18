@@ -16,4 +16,10 @@ public class AppointmentDTO {
     private Patient patient;
     private Dentist dentist;
     private LocalDateTime dateTime;
+
+    public AppointmentDTO(Patient patient, Dentist dentist, LocalDateTime dateTime) {
+        this.patient = patient;
+        this.dentist = dentist;
+        this.dateTime = dateTime;
+    }
 }

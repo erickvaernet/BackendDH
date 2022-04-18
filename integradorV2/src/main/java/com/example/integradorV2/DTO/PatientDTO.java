@@ -22,4 +22,13 @@ public class PatientDTO {
     private LocalDate entryDate;
     private Address address;
     private Set<Appointment> appointments;
+
+    public PatientDTO(Integer dni, String name, String lastName, String email, LocalDate entryDate, Address address) {
+        this.dni = dni;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
+        this.entryDate = entryDate;
+        this.address = address;
+    }
 }

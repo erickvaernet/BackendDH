@@ -1,8 +1,6 @@
 package com.example.integradorV2.Entities;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
@@ -37,5 +35,11 @@ public class Appointment {
     @Override
     public int hashCode() {
         return Objects.hash(patient, dentist, dateTime);
+    }
+
+    public Appointment(Patient patient, Dentist dentist, LocalDateTime dateTime) {
+        this.patient = patient;
+        this.dentist = dentist;
+        this.dateTime = dateTime;
     }
 }

@@ -6,6 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import javax.persistence.*;
+import java.util.Objects;
 
 
 @NoArgsConstructor
@@ -30,5 +31,18 @@ public class Address {
     public Address(String street, Integer number) {
         this.street = street;
         this.number = number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Address address = (Address) o;
+        return Objects.equals(id, address.id) && street.equals(address.street) && number.equals(address.number) && Objects.equals(city, address.city) && Objects.equals(state, address.state);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, street, number, city, state);
     }
 }

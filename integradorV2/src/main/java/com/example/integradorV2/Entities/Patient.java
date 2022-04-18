@@ -4,15 +4,18 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Objects;
 import java.util.Set;
 
 @NoArgsConstructor
 @Getter
 @Setter
 @Entity
+@ToString
 @Table(name = "patients")
 public class Patient {
     @Id
@@ -36,4 +39,17 @@ public class Patient {
     @JsonIgnore
     private Set<Appointment> appointments;
 
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Patient patient = (Patient) o;
+        return Objects.equals(id, patient.id) && dni.equals(patient.dni) && name.equals(patient.name) && lastName.equals(patient.lastName) && email.equals(patient.email) && entryDate.equals(patient.entryDate) && address.equals(patient.address) && Objects.equals(appointments, patient.appointments);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, dni, name, lastName, email, entryDate, address, appointments);
+    }
 }

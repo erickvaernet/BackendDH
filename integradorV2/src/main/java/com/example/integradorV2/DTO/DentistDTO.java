@@ -15,4 +15,10 @@ public class DentistDTO {
     private String name;
     private String lastName;
     private Set<Appointment> appointments;
+
+    public DentistDTO(Integer licenseNumber, String name, String lastName) {
+        this.licenseNumber = licenseNumber;
+        this.name = name;
+        this.lastName = lastName;
+    }
 }

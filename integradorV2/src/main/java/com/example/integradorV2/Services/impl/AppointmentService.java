@@ -1,12 +1,13 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.AppointmentDTO;
-import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.Entities.Appointment;
-import com.example.integradorV2.Entities.Dentist;
 import com.example.integradorV2.Persistence.IAppointmentRepository;
 import com.example.integradorV2.Services.IAppointmentService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -64,9 +65,13 @@ public class AppointmentService implements IAppointmentService {
 
     //Mappers
     private AppointmentDTO mapToDTO(Appointment appointment){
-        return new ObjectMapper().convertValue(appointment, AppointmentDTO.class);
+        return new ObjectMapper().registerModule(new ParameterNamesModule()).
+                registerModule(new Jdk8Module()).
+                registerModule(new JavaTimeModule()).convertValue(appointment, AppointmentDTO.class);
     }
     private Appointment mapToEntity(AppointmentDTO appointmentDto){
-        return new ObjectMapper().convertValue(appointmentDto, Appointment.class);
+        return new ObjectMapper().registerModule(new ParameterNamesModule()).
+                registerModule(new Jdk8Module()).
+                registerModule(new JavaTimeModule()).convertValue(appointmentDto, Appointment.class);
     }
 }
