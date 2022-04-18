@@ -20,7 +20,6 @@ public class AppointmentService implements IAppointmentService {
     @Autowired
     private IAppointmentRepository appointmentRepository;
 
-
     @Override
     public AppointmentDTO save(AppointmentDTO appointmentDTO) {
         Appointment newAppointment= mapToEntity(appointmentDTO);
@@ -63,6 +62,26 @@ public class AppointmentService implements IAppointmentService {
         return appointmentDTOList;
     }
 
+    @Override
+    public List<AppointmentDTO> findByDentistId(long dentistId) {
+        List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
+        appointmentRepository.findByDentistId(dentistId)
+                .forEach(
+                        (appointment)->appointmentDTOList.add(mapToDTO( appointment ))
+                );
+        return appointmentDTOList;
+    }
+
+    @Override
+    public List<AppointmentDTO> findByPatientId(long patientId) {
+        List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
+        appointmentRepository.findByPatientId(patientId)
+                .forEach(
+                        (appointment)->appointmentDTOList.add(mapToDTO( appointment ))
+                );
+        return appointmentDTOList;
+    }
+
     //Mappers
     private AppointmentDTO mapToDTO(Appointment appointment){
         return new ObjectMapper().registerModule(new ParameterNamesModule()).
@@ -74,4 +93,5 @@ public class AppointmentService implements IAppointmentService {
                 registerModule(new Jdk8Module()).
                 registerModule(new JavaTimeModule()).convertValue(appointmentDto, Appointment.class);
     }
+
 }

@@ -126,8 +126,21 @@ class AppointmentServiceTest {
         assertTrue(appointmentDTOList.size()>0);
     }
 
-    //Mappers
+    @Test
+    void findByDentistId() {
+        List<AppointmentDTO> appointmentDTOList=appointmentService.findByDentistId(1L);
+        assertNotNull(appointmentDTOList);
+        assertTrue(appointmentDTOList.size()>0);
+    }
 
+    @Test
+    void findByPatientId() {
+        List<AppointmentDTO> appointmentDTOList=appointmentService.findByPatientId(1L);
+        assertNotNull(appointmentDTOList);
+        assertTrue(appointmentDTOList.size()>0);
+    }
+
+    //Mappers
     private static Dentist mapDentistDTOToEntity(DentistDTO dentistDto){
         return new ObjectMapper().convertValue(dentistDto, Dentist.class);
     }

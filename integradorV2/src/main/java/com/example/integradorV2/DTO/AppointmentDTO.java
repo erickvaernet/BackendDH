@@ -22,4 +22,14 @@ public class AppointmentDTO {
         this.dentist = dentist;
         this.dateTime = dateTime;
     }
+
+    @Override
+    public String toString() {
+        return "AppointmentDTO{" +
+                "id=" + id +
+                ", patient=" + patient +
+                ", dentist=" + dentist +
+                ", dateTime=" + dateTime +
+                '}';
+    }
 }
