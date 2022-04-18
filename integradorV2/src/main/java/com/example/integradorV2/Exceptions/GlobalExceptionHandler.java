@@ -1,4 +1,4 @@
-package com.example.integradorV2;
+package com.example.integradorV2.Exceptions;
 
 import org.apache.log4j.Logger;
 import org.springframework.http.ResponseEntity;
