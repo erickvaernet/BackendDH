@@ -1,6 +1,8 @@
 package com.example.integradorV2.Controllers;
 
-import com.example.integradorV2.DTO.PatientDTO;
+import com.example.integradorV2.DTO.AppointmentDTO;
+import com.example.integradorV2.Services.impl.AppointmentService;
+import com.example.integradorV2.Services.impl.DentistService;
 import com.example.integradorV2.Services.impl.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -12,35 +14,68 @@ import java.util.List;
 @RestController
 @RequestMapping("/appointments")
 public class AppointmentController {
-
+    @Autowired
+    public AppointmentService appointmentService;
+    @Autowired
+    public DentistService dentistService;
     @Autowired
     public PatientService patientService;
 
+
     @GetMapping("/{id}")
-    public ResponseEntity<PatientDTO> getPatient(@PathVariable("id") Long id){
+    public ResponseEntity<AppointmentDTO> getAppointment(@PathVariable("id") Long id){
         if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        PatientDTO dto=patientService.findById(id);
+        AppointmentDTO dto=appointmentService.findById(id);
         if(dto!=null) return ResponseEntity.ok(dto);
         else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
     }
 
     @GetMapping
-    public ResponseEntity<List<PatientDTO>> listPatient() {
-        return ResponseEntity.ok(patientService.findAll());
+    public ResponseEntity<List<AppointmentDTO>> listAppointment() {
+        return ResponseEntity.ok(appointmentService.findAll());
+    }
+
+    @GetMapping("/patient/{id}")
+    public ResponseEntity<List<AppointmentDTO>> listAppointmentsByPatient(@PathVariable long id) {
+        if(id>0) return ResponseEntity.ok(appointmentService.findByPatientId(id));
+        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+    }
+    @GetMapping("/dentist/{id}")
+    public ResponseEntity<List<AppointmentDTO>> listAppointmentsByDentist(@PathVariable long id) {
+        if(id>0)return ResponseEntity.ok(appointmentService.findByDentistId(id));
+        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
     }
 
     @PostMapping
-    public ResponseEntity<PatientDTO> createOdontologo(@RequestBody PatientDTO odontologo){
-        return ResponseEntity.ok(patientService.save(odontologo));
+    public ResponseEntity<?> createAppointment(@RequestBody AppointmentDTO appointment){
+        //Comprobaciones
+        if(appointment.getDateTime()==null
+         || appointment.getPatient()==null
+         || appointment.getDentist()==null)
+        {
+            return ResponseEntity.badRequest()
+                    .body("Some data of appointment like patient,dentist or dateTime is void");
+        }
+        if(patientService.findById(appointment.getPatient().getId())==null)
+            return  ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Patient not found");
+        if(dentistService.findById(appointment.getDentist().getId())==null)
+            return  ResponseEntity.status(HttpStatus.NOT_FOUND)
+                    .body("Patient not found");
+
+        //Quitamos los ms = Ponemos los milisegundos a 0
+        appointment.setDateTime(appointment.getDateTime().withNano(0));
+        //Se guarda y retorna
+        return ResponseEntity.ok(appointmentService.save(appointment));
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteOdontologo(@PathVariable Long id){
+    public ResponseEntity<String> deleteAppointment(@PathVariable Long id){
         ResponseEntity<String> response;
         if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        if(patientService.findById(id)!=null){
-            patientService.deleteById(id);
-            response=ResponseEntity.ok("Dentista eliminado");
+        if(appointmentService.findById(id)!=null){
+            appointmentService.deleteById(id);
+            response=ResponseEntity.ok("Turno eliminado");
         } else {
             response=ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
@@ -48,15 +83,13 @@ public class AppointmentController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<PatientDTO> updateOdontologo(@PathVariable Long id, @RequestBody PatientDTO dentist){
-        System.out.println(id);
-        System.out.println(dentist.toString());
+    public ResponseEntity<AppointmentDTO> updateAppointment(@PathVariable Long id, @RequestBody AppointmentDTO dentist){
         try {
-            return ResponseEntity.ok(patientService.update(id,dentist));
+            return ResponseEntity.ok(appointmentService.update(id,dentist));
         }catch (Exception e){
             System.err.println(e.getMessage());
             e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
-        return  null;
     }
 }
