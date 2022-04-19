@@ -2,6 +2,8 @@ package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.Entities.Dentist;
+import com.example.integradorV2.Exceptions.EntityNotFoundException;
+import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Persistence.IDentistRepository;
 import com.example.integradorV2.Services.IDentistService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,8 +43,10 @@ public class DentistService implements IDentistService {
 
     @Override
     public DentistDTO findById(Long id) {
+        if(id == 0) throw new InvalidIdException("Id can't be 0 or null");
         Optional<Dentist> optionalDentist= dentistRepository.findById(id);
-        return optionalDentist.map(this::mapToDTO).orElse(null);
+        return optionalDentist.map(this::mapToDTO)
+                .orElseThrow(()->new EntityNotFoundException("Dentist not found"));
     }
 
     @Override

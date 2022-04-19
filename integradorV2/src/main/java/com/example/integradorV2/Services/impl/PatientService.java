@@ -2,6 +2,8 @@ package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.PatientDTO;
 import com.example.integradorV2.Entities.Patient;
+import com.example.integradorV2.Exceptions.EntityNotFoundException;
+import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Persistence.IPatientRepository;
 import com.example.integradorV2.Services.IPatientService;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -46,8 +48,10 @@ public class PatientService implements IPatientService {
 
     @Override
     public PatientDTO findById(Long id) {
+        if(id == 0) throw new InvalidIdException("Id can't be 0 or null");
         Optional<Patient> patient= patientRepository.findById(id);
-        return patient.map(this::mapToDTO).orElse(null);
+        return patient.map(this::mapToDTO)
+                .orElseThrow(()->new EntityNotFoundException("Patient not found"));
     }
 
     @Override

@@ -1,6 +1,7 @@
 package com.example.integradorV2.Controllers;
 
 import com.example.integradorV2.DTO.DentistDTO;
+import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Services.impl.DentistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/dentists")
 public class DentistController {
@@ -17,10 +19,9 @@ public class DentistController {
 
     @GetMapping("/{id}")
     public ResponseEntity<DentistDTO> getDentist(@PathVariable("id") Long id){
-        if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        if(id==null) throw new InvalidIdException("null");
         DentistDTO dto=dentistService.findById(id);
-        if(dto!=null) return ResponseEntity.ok(dto);
-        else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping

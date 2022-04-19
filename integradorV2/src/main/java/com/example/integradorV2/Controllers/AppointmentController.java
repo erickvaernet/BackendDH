@@ -1,6 +1,7 @@
 package com.example.integradorV2.Controllers;
 
 import com.example.integradorV2.DTO.AppointmentDTO;
+import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Services.impl.AppointmentService;
 import com.example.integradorV2.Services.impl.DentistService;
 import com.example.integradorV2.Services.impl.PatientService;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/appointments")
 public class AppointmentController {
@@ -48,21 +50,6 @@ public class AppointmentController {
 
     @PostMapping
     public ResponseEntity<?> createAppointment(@RequestBody AppointmentDTO appointment){
-        //Comprobaciones
-        if(appointment.getDateTime()==null
-         || appointment.getPatient()==null
-         || appointment.getDentist()==null)
-        {
-            return ResponseEntity.badRequest()
-                    .body("Some data of appointment like patient,dentist or dateTime is void");
-        }
-        if(patientService.findById(appointment.getPatient().getId())==null)
-            return  ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Patient not found");
-        if(dentistService.findById(appointment.getDentist().getId())==null)
-            return  ResponseEntity.status(HttpStatus.NOT_FOUND)
-                    .body("Patient not found");
-
         //Quitamos los ms = Ponemos los milisegundos a 0
         appointment.setDateTime(appointment.getDateTime().withNano(0));
         //Se guarda y retorna

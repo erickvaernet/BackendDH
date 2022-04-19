@@ -31,7 +31,7 @@ class AppointmentServiceTest {
     public  DentistService dentistService;
     @Autowired
     public  PatientService patientService;
-
+/*
     @BeforeAll
     void data(){
         DentistDTO dentistDTO1 = dentistService.save(new DentistDTO(55555,"erick","vaernet"));
@@ -149,5 +149,5 @@ class AppointmentServiceTest {
                 .registerModule(new ParameterNamesModule()).
                 registerModule(new Jdk8Module()).
                 registerModule(new JavaTimeModule()).convertValue(patientDTO, Patient.class);
-    }
+    }*/
 }

@@ -1,2 +1,18 @@
 [2022-04-18 12-52-50] [ ERROR] [GlobalExceptionHandler:15] not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName
 [2022-04-18 12-54-31] [ ERROR] [GlobalExceptionHandler:15] not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName
+[2022-04-19 14-11-00] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage=''}
+[2022-04-19 14-12-29] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage=''}
+[2022-04-19 14-12-37] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/0', errorMessage='Dentist not found'}
+[2022-04-19 14-14-02] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/0', errorMessage='Dentist not found'}
+[2022-04-19 14-14-11] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage=''}
+[2022-04-19 14-16-21] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage='ex.getMessage()'}
+[2022-04-19 14-23-43] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage='Dentist not found'}
+[2022-04-19 14-23-46] [ ERROR] [GlobalExceptionHandler:29] Error {uri='/dentists/0', errorMessage='Id can't be 0 or null'}
+[2022-04-19 14-23-51] [ ERROR] [GlobalExceptionHandler:40] Error {uri='/dentists/1', errorMessage='Dentist not found'}
+[2022-04-19 14-25-03] [ ERROR] [GlobalExceptionHandler:36] Error {uri='/dentists/1', errorMessage='Dentist not foundasdasd'}
+[2022-04-19 14-25-09] [ ERROR] [GlobalExceptionHandler:25] Error {uri='/dentists/0', errorMessage='Id can't be 0 or null'}
+[2022-04-19 14-43-30] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/0', errorMessage='Id can't be 0 or null'}
+[2022-04-19 14-44-00] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/null', errorMessage='Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "null"'}
+[2022-04-19 15-06-20] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/', errorMessage='not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName'}
+[2022-04-19 15-11-34] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='could not execute statement; SQL [n/a]; constraint [FKQSNULA0NJ86S67OTIBU2J2HSV]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
+[2022-04-19 15-12-21] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Some data of appointment like patient,dentist or dateTime is void'}
