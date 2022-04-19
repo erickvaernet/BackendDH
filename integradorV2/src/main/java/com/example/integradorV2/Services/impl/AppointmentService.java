@@ -54,10 +54,9 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public AppointmentDTO update(Long id, AppointmentDTO appointmentDTO) {
-        AppointmentDTO appointmentToUpdate=findById(id);
-        //Comprobaciones
         if(appointmentDTO==null)
             throw new NullFieldsException("Need an appointment");
+        AppointmentDTO appointmentToUpdate=findById(id);
         //Asignaciones
         if(appointmentDTO.getPatient()!=null) appointmentToUpdate.setPatient(appointmentDTO.getPatient());
         if(appointmentDTO.getDentist()!=null) appointmentToUpdate.setDentist(appointmentDTO.getDentist());
@@ -69,14 +68,15 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public AppointmentDTO findById(Long id) {
-        if(id == 0) throw new InvalidIdException("Appointment id cannot be 0 or null");
+        if(id==null || id <= 0) throw new InvalidIdException("Appointment id cannot be 0, null or negative");
         Optional<Appointment> optionalAppointment= appointmentRepository.findById(id);
         return optionalAppointment.map(this::mapToDTO)
-                .orElseThrow(()->new EntityNotFoundException("Dentist not found"));
+                .orElseThrow(()->new EntityNotFoundException("Appointment not found"));
     }
 
     @Override
     public void deleteById(Long id) {
+        findById(id);
         appointmentRepository.deleteById(id);
     }
 
@@ -92,7 +92,7 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public List<AppointmentDTO> findByDentistId(long dentistId) {
-        if(dentistId == 0) throw new InvalidIdException("Dentist id cannot be 0 or null");
+        if(dentistId == 0) throw new InvalidIdException("Dentist id cannot be 0, null or negative");
 
         List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
         appointmentRepository.findByDentistId(dentistId)
@@ -104,7 +104,7 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public List<AppointmentDTO> findByPatientId(long patientId) {
-        if(patientId == 0) throw new InvalidIdException("Patient id cannot be 0 or null");
+        if(patientId == 0) throw new InvalidIdException("Patient id cannot be 0, null or negative");
         List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
         appointmentRepository.findByPatientId(patientId)
                 .forEach(

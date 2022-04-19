@@ -26,10 +26,8 @@ public class AppointmentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<AppointmentDTO> getAppointment(@PathVariable("id") Long id){
-        if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
         AppointmentDTO dto=appointmentService.findById(id);
-        if(dto!=null) return ResponseEntity.ok(dto);
-        else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        return ResponseEntity.ok(dto);
     }
 
     @GetMapping
@@ -39,13 +37,11 @@ public class AppointmentController {
 
     @GetMapping("/patient/{id}")
     public ResponseEntity<List<AppointmentDTO>> listAppointmentsByPatient(@PathVariable long id) {
-        if(id>0) return ResponseEntity.ok(appointmentService.findByPatientId(id));
-        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        return ResponseEntity.ok(appointmentService.findByPatientId(id));
     }
     @GetMapping("/dentist/{id}")
     public ResponseEntity<List<AppointmentDTO>> listAppointmentsByDentist(@PathVariable long id) {
-        if(id>0)return ResponseEntity.ok(appointmentService.findByDentistId(id));
-        else return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        return ResponseEntity.ok(appointmentService.findByDentistId(id));
     }
 
     @PostMapping
@@ -58,25 +54,12 @@ public class AppointmentController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteAppointment(@PathVariable Long id){
-        ResponseEntity<String> response;
-        if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        if(appointmentService.findById(id)!=null){
-            appointmentService.deleteById(id);
-            response=ResponseEntity.ok("Turno eliminado");
-        } else {
-            response=ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-        return response;
+        appointmentService.deleteById(id);
+        return ResponseEntity.ok("Appointment deleted");
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<AppointmentDTO> updateAppointment(@PathVariable Long id, @RequestBody AppointmentDTO dentist){
-        try {
-            return ResponseEntity.ok(appointmentService.update(id,dentist));
-        }catch (Exception e){
-            System.err.println(e.getMessage());
-            e.printStackTrace();
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
-        }
+        return ResponseEntity.ok(appointmentService.update(id,dentist));
     }
 }

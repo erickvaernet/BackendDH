@@ -19,10 +19,7 @@ public class PatientController {
 
     @GetMapping("/{id}")
     public ResponseEntity<PatientDTO> getPatient(@PathVariable("id") Long id){
-        if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        PatientDTO dto=patientService.findById(id);
-        if(dto!=null) return ResponseEntity.ok(dto);
-        else return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
+        return ResponseEntity.ok(patientService.findById(id));
     }
 
     @GetMapping
@@ -37,27 +34,12 @@ public class PatientController {
 
     @DeleteMapping("/{id}")
     public ResponseEntity<String> deleteOdontologo(@PathVariable Long id){
-        ResponseEntity<String> response;
-        if(id==null || id<=0) return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
-        if(patientService.findById(id)!=null){
-            patientService.deleteById(id);
-            response=ResponseEntity.ok("Dentista eliminado");
-        } else {
-            response=ResponseEntity.status(HttpStatus.NOT_FOUND).build();
-        }
-        return response;
+        patientService.deleteById(id);
+        return ResponseEntity.ok("Dentist deleted");
     }
 
     @PutMapping("/{id}")
     public ResponseEntity<PatientDTO> updateOdontologo(@PathVariable Long id, @RequestBody PatientDTO dentist){
-        System.out.println(id);
-        System.out.println(dentist.toString());
-        try {
             return ResponseEntity.ok(patientService.update(id,dentist));
-        }catch (Exception e){
-            System.err.println(e.getMessage());
-            e.printStackTrace();
-        }
-        return  null;
     }
 }

@@ -4,10 +4,13 @@ import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.Entities.Dentist;
 import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Exceptions.InvalidIdException;
+import com.example.integradorV2.Exceptions.NullFieldsException;
 import com.example.integradorV2.Persistence.IDentistRepository;
 import com.example.integradorV2.Services.IDentistService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -21,6 +24,7 @@ public class DentistService implements IDentistService {
 
     @Override
     public DentistDTO save(DentistDTO dentistDTO) {
+        if(dentistDTO.getLicenseNumber()==null) throw new NullFieldsException("Licence Number Cannot be null");
         Dentist newDentist= mapToEntity(dentistDTO);
         newDentist=dentistRepository.save(newDentist);
         return mapToDTO(newDentist);
@@ -31,7 +35,7 @@ public class DentistService implements IDentistService {
     public DentistDTO update(Long id, DentistDTO dentistDTO) {
         DentistDTO dentistToUpdate=findById(id);
         //Comprobaciones
-        if(dentistDTO==null || dentistToUpdate==null) return null;
+        if(dentistDTO==null) throw new NullFieldsException("Dentist cannot be null");
         //Asignaciones
         if(dentistDTO.getName()!=null) dentistToUpdate.setName(dentistDTO.getName());
         if(dentistDTO.getLastName()!=null) dentistToUpdate.setLastName(dentistDTO.getLastName());
@@ -43,7 +47,7 @@ public class DentistService implements IDentistService {
 
     @Override
     public DentistDTO findById(Long id) {
-        if(id == 0) throw new InvalidIdException("Dentist id cannot be 0 or null");
+        if(id==null || id <= 0 ) throw new InvalidIdException("Dentist id cannot be 0, null or negative");
         Optional<Dentist> optionalDentist= dentistRepository.findById(id);
         return optionalDentist.map(this::mapToDTO)
                 .orElseThrow(()->new EntityNotFoundException("Dentist not found"));
@@ -51,6 +55,7 @@ public class DentistService implements IDentistService {
 
     @Override
     public void deleteById(Long id) {
+        findById(id);
         dentistRepository.deleteById(id);
     }
 

@@ -34,8 +34,8 @@ public class AppointmentDTO {
     public String toString() {
         return "AppointmentDTO{" +
                 "id=" + id +
-                ", patient=" + patient +
-                ", dentist=" + dentist +
+                ", patient=" + patient.toString() +
+                ", dentist=" + dentist.toString() +
                 ", dateTime=" + dateTime +
                 '}';
     }
