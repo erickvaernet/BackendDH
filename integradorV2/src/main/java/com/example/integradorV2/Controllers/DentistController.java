@@ -19,7 +19,6 @@ public class DentistController {
 
     @GetMapping("/{id}")
     public ResponseEntity<DentistDTO> getDentist(@PathVariable("id") Long id){
-        if(id==null) throw new InvalidIdException("null");
         DentistDTO dto=dentistService.findById(id);
         return ResponseEntity.ok(dto);
     }

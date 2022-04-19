@@ -47,8 +47,8 @@ public class PatientService implements IPatientService {
     }
 
     @Override
-    public PatientDTO findById(Long id) {
-        if(id == 0) throw new InvalidIdException("Id can't be 0 or null");
+    public PatientDTO findById(Long id)  {
+        if(id == 0) throw new InvalidIdException("Patient id cannot be 0 or null");
         Optional<Patient> patient= patientRepository.findById(id);
         return patient.map(this::mapToDTO)
                 .orElseThrow(()->new EntityNotFoundException("Patient not found"));

@@ -43,7 +43,7 @@ public class DentistService implements IDentistService {
 
     @Override
     public DentistDTO findById(Long id) {
-        if(id == 0) throw new InvalidIdException("Id can't be 0 or null");
+        if(id == 0) throw new InvalidIdException("Dentist id cannot be 0 or null");
         Optional<Dentist> optionalDentist= dentistRepository.findById(id);
         return optionalDentist.map(this::mapToDTO)
                 .orElseThrow(()->new EntityNotFoundException("Dentist not found"));

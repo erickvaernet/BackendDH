@@ -1,9 +1,9 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.AppointmentDTO;
+import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.DTO.PatientDTO;
 import com.example.integradorV2.Entities.Appointment;
-import com.example.integradorV2.Entities.Patient;
 import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Exceptions.NullFieldsException;
@@ -29,7 +29,6 @@ public class AppointmentService implements IAppointmentService {
     @Autowired
     private  PatientService patientService;
 
-
     @Override
     public AppointmentDTO save(AppointmentDTO appointmentDTO) {
         if(appointmentDTO.getDateTime()==null
@@ -39,11 +38,16 @@ public class AppointmentService implements IAppointmentService {
             throw new NullFieldsException(
                     "Some data of appointment like patient,dentist or dateTime is void");
         }
-        //PatientDTO p =patientService.findById(appointmentDTO.getPatient().getId());
+        //dentro de cada servicio se verifican si existen los turnos
+        PatientDTO p =patientService.findById(appointmentDTO.getPatient().getId());
+        DentistDTO d= dentistService.findById(appointmentDTO.getDentist().getId());
+
         Appointment newAppointment= mapToEntity(appointmentDTO);
         newAppointment=appointmentRepository.save(newAppointment);
+
         AppointmentDTO newAppointmentDTO =mapToDTO(newAppointment);
-        //newAppointmentDTO.setPatient(p);
+        newAppointmentDTO.setPatient(p);
+        newAppointmentDTO.setDentist(d);
 
         return newAppointmentDTO;
     }
@@ -65,7 +69,7 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public AppointmentDTO findById(Long id) {
-        if(id == 0) throw new InvalidIdException("Id can't be 0 or null");
+        if(id == 0) throw new InvalidIdException("Appointment id cannot be 0 or null");
         Optional<Appointment> optionalAppointment= appointmentRepository.findById(id);
         return optionalAppointment.map(this::mapToDTO)
                 .orElseThrow(()->new EntityNotFoundException("Dentist not found"));
@@ -88,7 +92,7 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public List<AppointmentDTO> findByDentistId(long dentistId) {
-        if(dentistId == 0) throw new InvalidIdException("Id can't be 0 or null");
+        if(dentistId == 0) throw new InvalidIdException("Dentist id cannot be 0 or null");
 
         List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
         appointmentRepository.findByDentistId(dentistId)
@@ -100,7 +104,7 @@ public class AppointmentService implements IAppointmentService {
 
     @Override
     public List<AppointmentDTO> findByPatientId(long patientId) {
-        if(patientId == 0) throw new InvalidIdException("Id can't be 0 or null");
+        if(patientId == 0) throw new InvalidIdException("Patient id cannot be 0 or null");
         List<AppointmentDTO> appointmentDTOList=new ArrayList<>();
         appointmentRepository.findByPatientId(patientId)
                 .forEach(

@@ -13,11 +13,18 @@ import java.time.LocalDateTime;
 @Setter
 public class AppointmentDTO {
     private Long id;
-    private Patient patient;
-    private Dentist dentist;
+    private PatientDTO patient;
+    private DentistDTO dentist;
     private LocalDateTime dateTime;
 
-    public AppointmentDTO(Patient patient, Dentist dentist, LocalDateTime dateTime) {
+    public AppointmentDTO(PatientDTO patient, DentistDTO dentist, LocalDateTime dateTime) {
+        this.patient = patient;
+        this.dentist = dentist;
+        this.dateTime = dateTime;
+    }
+
+    public AppointmentDTO(Long id, PatientDTO patient, DentistDTO dentist, LocalDateTime dateTime) {
+        this.id = id;
         this.patient = patient;
         this.dentist = dentist;
         this.dateTime = dateTime;

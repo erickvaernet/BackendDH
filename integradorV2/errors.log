@@ -16,3 +16,8 @@
 [2022-04-19 15-06-20] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/', errorMessage='not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.lastName'}
 [2022-04-19 15-11-34] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='could not execute statement; SQL [n/a]; constraint [FKQSNULA0NJ86S67OTIBU2J2HSV]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
 [2022-04-19 15-12-21] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Some data of appointment like patient,dentist or dateTime is void'}
+[2022-04-19 15-23-00] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Id can't be 0 or null'}
+[2022-04-19 15-30-59] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Id can't be 0 or null'}
+[2022-04-19 15-31-08] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Id of Dentist can't be 0 or null'}
+[2022-04-19 15-31-13] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Id can't be 0 or null'}
+[2022-04-19 15-31-19] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Id can't be 0 or null'}
