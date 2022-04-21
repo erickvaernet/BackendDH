@@ -31,3 +31,23 @@
 [2022-04-19 15-37-53] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Cannot invoke "com.example.integradorV2.DTO.DentistDTO.toString()" because "this.dentist" is null'}
 [2022-04-19 15-38-34] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Some data of appointment like patient,dentist or dateTime is void'}
 [2022-04-19 15-39-17] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments/2', errorMessage='Dentist not found'}
+[2022-04-21 16-06-06] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "role" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "rol", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["role"])'}
+[2022-04-21 16-07-51] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "role" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "rol", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["role"])'}
+[2022-04-21 16-08-15] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "role" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "rol", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["role"])'}
+[2022-04-21 16-10-57] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "token" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
+[2022-04-21 16-12-47] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "token" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
+[2022-04-21 16-14-38] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "username" (class com.example.integradorV2.DTO.DentistDTO), not marked as ignorable (5 known properties: "lastName", "licenseNumber", "id", "appointments", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.DTO.DentistDTO["username"])'}
+[2022-04-21 16-15-34] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "token" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
+[2022-04-21 16-17-56] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "token" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
+[2022-04-21 16-34-10] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "token" (class com.example.integradorV2.Entities.User), not marked as ignorable (7 known properties: "lastName", "username", "id", "email", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
+[2022-04-21 16-50-59] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "email" (class com.example.integradorV2.DTO.DentistDTO), not marked as ignorable (8 known properties: "lastName", "appointments", "username", "licenseNumber", "id", "role", "password", "name"])
+ at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.DTO.DentistDTO["email"])'}

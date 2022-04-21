@@ -1,7 +1,7 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
-import org.junit.Assert;
+import com.example.integradorV2.DTO.RegisterUserDTO;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,11 +12,14 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class DentistServiceTest {
+    /*
     @Autowired
     public DentistService dentistService;
 
+
     @Test
     void save() {
+
         DentistDTO dentistDTO= new DentistDTO();
         dentistDTO.setLicenseNumber(124);
         dentistDTO.setName("Erick");
@@ -24,6 +27,11 @@ class DentistServiceTest {
         dentistDTO=dentistService.save(dentistDTO);
         assertNotNull(dentistDTO);
         assertTrue(dentistDTO.getId()>0);
+
+        RegisterUserDTO regiterUserDTO= new RegisterUserDTO("er","ddd",9786,"ricardo","falso");
+
+
+
     }
 
     @Test
@@ -88,6 +96,6 @@ class DentistServiceTest {
         List<DentistDTO> dentistDTOList=dentistService.findAll();
         assertNotNull(dentistDTOList);
         assertTrue(dentistDTOList.size()>0);
-    }
+    }*/
 
 }

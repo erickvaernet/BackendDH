@@ -1,11 +1,15 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
+import com.example.integradorV2.DTO.RegisterUserDTO;
 import com.example.integradorV2.Entities.Dentist;
+import com.example.integradorV2.Entities.Role;
+import com.example.integradorV2.Entities.User;
 import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Exceptions.NullFieldsException;
 import com.example.integradorV2.Persistence.IDentistRepository;
+import com.example.integradorV2.Persistence.IUserRepository;
 import com.example.integradorV2.Services.IDentistService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,11 +25,21 @@ import java.util.Optional;
 public class DentistService implements IDentistService {
     @Autowired
     private IDentistRepository dentistRepository;
+    @Autowired
+    private IUserRepository userRepository;
+
+    /*public RegisterUserDTO save2(RegisterUserDTO registerUserDTO){
+        if(registerUserDTO.getLicenseNumber()==null) throw new NullFieldsException("Licence Number Cannot be null");
+        Dentist newDentist= new ObjectMapper().convertValue(registerUserDTO, Dentist.class);
+        dentistRepository.save(newDentist);
+        userRepository.save( new ObjectMapper().convertValue(registerUserDTO, User.class));
+        return registerUserDTO;
+    }*/
 
     @Override
     public DentistDTO save(DentistDTO dentistDTO) {
         if(dentistDTO.getLicenseNumber()==null) throw new NullFieldsException("Licence Number Cannot be null");
-
+        dentistDTO.setRole(Role.DENTIST);
         Dentist newDentist= mapToEntity(dentistDTO);
         newDentist=dentistRepository.save(newDentist);
         return mapToDTO(newDentist);

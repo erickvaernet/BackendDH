@@ -1,8 +1,14 @@
 package com.example.integradorV2.Controllers;
 
 import com.example.integradorV2.DTO.DentistDTO;
+import com.example.integradorV2.DTO.RegisterDentistDTO;
+import com.example.integradorV2.DTO.UserDTO;
+import com.example.integradorV2.Entities.Dentist;
+import com.example.integradorV2.Entities.Role;
 import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Services.impl.DentistService;
+import com.example.integradorV2.Services.impl.UserService;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,6 +22,8 @@ import java.util.List;
 public class DentistController {
     @Autowired
     private DentistService dentistService;
+    @Autowired
+    private UserService userService;
 
     @GetMapping("/{id}")
     public ResponseEntity<DentistDTO> getDentist(@PathVariable("id") Long id){
@@ -29,8 +37,10 @@ public class DentistController {
     }
 
     @PostMapping
-    public ResponseEntity<DentistDTO> createOdontologo(@RequestBody DentistDTO odontologo){
-        return ResponseEntity.ok(dentistService.save(odontologo));
+    public ResponseEntity<String> saveDentist(@RequestBody DentistDTO newDentist){
+        newDentist.setRole(Role.DENTIST);
+        dentistService.save(newDentist);
+        return ResponseEntity.ok("Dentist created");
     }
 
     @DeleteMapping("/{id}")
@@ -57,6 +67,17 @@ public class DentistController {
             e.printStackTrace();
         }
         return  null;
+    }
+
+    //mappers
+    private DentistDTO mapRegisterDentistToDentistDTO(RegisterDentistDTO registerDentistDTO){
+        return new ObjectMapper().convertValue(registerDentistDTO, DentistDTO.class);
+    }
+    private UserDTO mapRegisterDentistToUserDTO(RegisterDentistDTO registerDentistDTO){
+        return new ObjectMapper().convertValue(registerDentistDTO, UserDTO.class);
+    }
+    private Dentist mapToEntity(DentistDTO dentistDto){
+        return new ObjectMapper().convertValue(dentistDto, Dentist.class);
     }
 
 }

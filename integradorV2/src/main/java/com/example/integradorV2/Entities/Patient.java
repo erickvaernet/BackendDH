@@ -16,7 +16,7 @@ import java.util.Set;
 @Setter
 @Entity
 @Table(name = "patients")
-public class Patient extends User{
+public class Patient extends User {
     @Column(nullable = false, name = "dni")
     private Integer dni;
     @Column(nullable = false, name = "entry_date")

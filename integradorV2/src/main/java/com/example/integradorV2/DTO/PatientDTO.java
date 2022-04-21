@@ -2,7 +2,7 @@ package com.example.integradorV2.DTO;
 
 import com.example.integradorV2.Entities.Address;
 import com.example.integradorV2.Entities.Appointment;
-import com.example.integradorV2.Entities.Role;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -16,15 +16,22 @@ import java.util.Set;
 @Setter
 @ToString
 @NoArgsConstructor
-public class PatientDTO extends UserDTO{
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class PatientDTO {
+    private Long id;
     private Integer dni;
+    private String name;
+    private String lastName;
+    private String email;
     private LocalDate entryDate;
     private Address address;
     private Set<Appointment> appointments;
 
-    public PatientDTO(String username, String password, String email, Role role, String name, String lastName, String token, Integer dni, LocalDate entryDate, Address address) {
-        super(username, password, email, role, name, lastName, token);
+    public PatientDTO(Integer dni, String name, String lastName, String email, LocalDate entryDate, Address address) {
         this.dni = dni;
+        this.name = name;
+        this.lastName = lastName;
+        this.email = email;
         this.entryDate = entryDate;
         this.address = address;
     }

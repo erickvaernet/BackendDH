@@ -19,6 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AppointmentServiceTest {
+    /*
     @Autowired
     public  AppointmentService appointmentService;
     @Autowired
@@ -130,6 +131,6 @@ class AppointmentServiceTest {
         List<AppointmentDTO> appointmentDTOList=appointmentService.findByPatientId(1L);
         assertNotNull(appointmentDTOList);
         assertTrue(appointmentDTOList.size()>0);
-    }
+    }*/
 
 }

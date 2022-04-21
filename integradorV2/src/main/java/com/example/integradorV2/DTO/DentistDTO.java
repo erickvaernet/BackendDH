@@ -10,16 +10,14 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @ToString
-public class DentistDTO extends UserDTO{
-    private Integer licenseNumber;
+public class DentistDTO {
+    private Long id;
+    private String username;
+    private String password;
+    private Role role;
     private String name;
     private String lastName;
+    private Integer licenseNumber;
     private Set<Appointment> appointments;
 
-    public DentistDTO(String username, String password, String email, Role role, String name, String lastName, String token, Integer licenseNumber, String name1, String lastName1) {
-        super(username, password, email, role, name, lastName, token);
-        this.licenseNumber = licenseNumber;
-        this.name = name1;
-        this.lastName = lastName1;
-    }
 }

@@ -2,10 +2,13 @@ package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.PatientDTO;
 import com.example.integradorV2.Entities.Patient;
+import com.example.integradorV2.Entities.Role;
 import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Persistence.IPatientRepository;
+import com.example.integradorV2.Persistence.IUserRepository;
 import com.example.integradorV2.Services.IPatientService;
+import com.example.integradorV2.Services.IUserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -21,9 +24,12 @@ import java.util.Optional;
 public class PatientService implements IPatientService {
     @Autowired
     private IPatientRepository patientRepository;
+    @Autowired
+    private UserService userService;
 
     @Override
     public PatientDTO save(PatientDTO patientDTO) {
+        //userService.save(pa);
         Patient newPatient= mapToEntity(patientDTO);
         newPatient=patientRepository.save(newPatient);
         return mapToDTO(newPatient);
