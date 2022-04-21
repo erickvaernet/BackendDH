@@ -1,11 +1,11 @@
 package com.example.integradorV2.Entities;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "users", indexes = @Index(columnList = "username"))
-public class User {
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -13,10 +13,7 @@ public class User {
     private String username;
     @Column(nullable = false)
     private String password;
-    @Column(nullable = true)
-    private String email;
     @Column(nullable = false)
-    @Enumerated(EnumType.STRING)
     private Role rol;
     @Column(nullable = false)
     private String name;
