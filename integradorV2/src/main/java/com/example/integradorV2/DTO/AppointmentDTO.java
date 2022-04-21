@@ -2,6 +2,7 @@ package com.example.integradorV2.DTO;
 
 import com.example.integradorV2.Entities.Dentist;
 import com.example.integradorV2.Entities.Patient;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -11,6 +12,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Getter
 @Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class AppointmentDTO {
     private Long id;
     private PatientDTO patient;

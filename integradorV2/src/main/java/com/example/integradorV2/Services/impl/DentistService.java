@@ -25,6 +25,7 @@ public class DentistService implements IDentistService {
     @Override
     public DentistDTO save(DentistDTO dentistDTO) {
         if(dentistDTO.getLicenseNumber()==null) throw new NullFieldsException("Licence Number Cannot be null");
+
         Dentist newDentist= mapToEntity(dentistDTO);
         newDentist=dentistRepository.save(newDentist);
         return mapToDTO(newDentist);
