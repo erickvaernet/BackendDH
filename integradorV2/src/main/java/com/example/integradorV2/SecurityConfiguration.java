@@ -28,11 +28,11 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .cors().and()
                 .addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
                 .authorizeRequests()
-                .antMatchers(HttpMethod.POST, "/api/users/login").permitAll()
-                .antMatchers(HttpMethod.GET, "/api/**").authenticated()
-                .antMatchers(HttpMethod.POST, "/api/**").authenticated()
-                .antMatchers(HttpMethod.PUT, "/api/**").authenticated()
-                .antMatchers(HttpMethod.DELETE, "/api/**").authenticated();
+                .antMatchers(HttpMethod.POST, "/users/login").permitAll()
+                .antMatchers(HttpMethod.GET, "/**").authenticated()
+                .antMatchers(HttpMethod.POST, "/**").authenticated()
+                .antMatchers(HttpMethod.PUT, "/**").authenticated()
+                .antMatchers(HttpMethod.DELETE, "/**").authenticated();
     }
 
     @Bean

@@ -1,6 +1,7 @@
 package com.example.integradorV2.Controllers;
 
 import com.example.integradorV2.DTO.DentistDTO;
+import com.example.integradorV2.DTO.DentistListDTO;
 import com.example.integradorV2.DTO.RegisterDentistDTO;
 import com.example.integradorV2.DTO.UserDTO;
 import com.example.integradorV2.Entities.Dentist;
@@ -14,6 +15,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin("*")
@@ -32,8 +34,13 @@ public class DentistController {
     }
 
     @GetMapping
-    public ResponseEntity<List<DentistDTO>> listDentist() {
-        return ResponseEntity.ok(dentistService.findAll());
+    public ResponseEntity<List<DentistListDTO>> listDentist() {
+        List<DentistListDTO> dentistListDTOS=new ArrayList<>();
+        dentistService.findAll().stream().forEach((a)->
+                dentistListDTOS.add(
+                        new DentistListDTO(a.getId(),a.getLicenseNumber(),
+                                (a.getName()+" "+a.getLastName()))));
+        return ResponseEntity.ok(dentistListDTOS);
     }
 
     @PostMapping

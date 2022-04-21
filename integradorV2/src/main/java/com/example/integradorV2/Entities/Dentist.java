@@ -16,7 +16,7 @@ import java.util.Set;
 @Entity
 @Table(name = "dentists")
 public class Dentist extends User{
-    @Column(nullable = false, unique = true,name = "licence_number")
+    @Column(nullable = false, unique = true,name = "license_number")
     private Integer licenseNumber;
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "dentist",fetch = FetchType.LAZY)
     @JsonIgnore

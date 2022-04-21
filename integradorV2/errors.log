@@ -51,3 +51,10 @@
  at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.Entities.User["token"])'}
 [2022-04-21 16-50-59] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='Unrecognized field "email" (class com.example.integradorV2.DTO.DentistDTO), not marked as ignorable (8 known properties: "lastName", "appointments", "username", "licenseNumber", "id", "role", "password", "name"])
  at [Source: UNKNOWN; byte offset: #UNKNOWN] (through reference chain: com.example.integradorV2.DTO.DentistDTO["email"])'}
+[2022-04-21 16-59-36] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_R43AF9AP4EDM43MMTQ01ODDJ6_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 1 */ 'hola' )"; SQL statement:
+insert into users (id, last_name, name, password, role, username) values (default, ?, ?, ?, ?, ?) [23505-206]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
+[2022-04-21 17-02-41] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/1', errorMessage='Dentist not found'}
+[2022-04-21 17-06-46] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/21', errorMessage='Dentist not found'}
+[2022-04-21 17-21-33] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='This User doesn't exist'}
+[2022-04-21 17-53-38] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='No enum constant com.example.integradorV2.Entities.Role.0; nested exception is java.lang.IllegalArgumentException: No enum constant com.example.integradorV2.Entities.Role.0'}
+[2022-04-21 17-54-38] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.example.integradorV2.Entities.Patient["entryDate"])'}

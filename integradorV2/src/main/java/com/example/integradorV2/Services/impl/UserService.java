@@ -12,6 +12,9 @@ import com.example.integradorV2.Exceptions.WrongCredentialsException;
 import com.example.integradorV2.Persistence.IUserRepository;
 import com.example.integradorV2.Services.IUserService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -75,10 +78,16 @@ public class UserService implements IUserService {
 
     //Mappers
     private UserDTO mapToDTO(User user){
-        return new ObjectMapper().convertValue(user, UserDTO.class);
+        return new ObjectMapper()
+                .registerModule(new ParameterNamesModule()).
+                registerModule(new Jdk8Module()).
+                registerModule(new JavaTimeModule()).convertValue(user, UserDTO.class);
     }
     private User mapToEntity(UserDTO userDTO){
-        return new ObjectMapper().convertValue(userDTO, User.class);
+        return new ObjectMapper()
+                .registerModule(new ParameterNamesModule()).
+                registerModule(new Jdk8Module()).
+                registerModule(new JavaTimeModule()).convertValue(userDTO, User.class);
     }
 
 

@@ -44,7 +44,6 @@ public class PatientService implements IPatientService {
         if(patientDTO.getDni()!=null) patientToUpdate.setDni(patientDTO.getDni());
         if(patientDTO.getName()!=null) patientToUpdate.setName(patientDTO.getName());
         if(patientDTO.getLastName()!=null) patientToUpdate.setLastName(patientDTO.getLastName());
-        if(patientDTO.getEmail()!=null) patientToUpdate.setEmail(patientDTO.getEmail());
         if(patientDTO.getEntryDate()!=null) patientToUpdate.setEntryDate(patientDTO.getEntryDate());
         if(patientDTO.getAddress()!=null) patientToUpdate.setAddress(patientDTO.getAddress());
         //Guardado
