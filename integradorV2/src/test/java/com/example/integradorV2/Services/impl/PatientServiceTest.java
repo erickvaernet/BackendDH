@@ -1,5 +1,6 @@
 package com.example.integradorV2.Services.impl;
 
+import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.DTO.PatientDTO;
 import com.example.integradorV2.Entities.Address;
 import org.junit.jupiter.api.Test;
@@ -97,8 +98,12 @@ class PatientServiceTest {
         PatientDTO ptWithId= patientService.save(patientDTO);
         long id= ptWithId.getId();
         patientService.deleteById(id);
-        PatientDTO pt=patientService.findById(id);
-        assertNull(pt);
+        try {
+            PatientDTO pt=patientService.findById(id);
+        }
+        catch (Exception e){
+            assertTrue(e.getMessage().contains("Patient not found"));
+        }
     }
 
     @Test

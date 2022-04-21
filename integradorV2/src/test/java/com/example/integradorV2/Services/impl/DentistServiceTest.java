@@ -1,6 +1,7 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
+import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -69,8 +70,12 @@ class DentistServiceTest {
     @Test
     void deleteById() {
         dentistService.deleteById(1L);
-        DentistDTO dt=dentistService.findById(1L);
-        assertNull(dt);
+        try {
+            DentistDTO dt = dentistService.findById(1L);
+        }
+        catch (Exception e){
+            assertTrue(e.getMessage().contains("Dentist not found"));
+        }
     }
 
     @Test

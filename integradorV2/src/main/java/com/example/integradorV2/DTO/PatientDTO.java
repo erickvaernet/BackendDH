@@ -5,6 +5,7 @@ import com.example.integradorV2.Entities.Appointment;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 import java.time.LocalDate;
 import java.util.Set;
@@ -12,6 +13,7 @@ import java.util.Set;
 
 @Getter
 @Setter
+@ToString
 @NoArgsConstructor
 public class PatientDTO {
     private Long id;

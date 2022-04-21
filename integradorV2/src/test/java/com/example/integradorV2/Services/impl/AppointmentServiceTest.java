@@ -4,12 +4,6 @@ import com.example.integradorV2.DTO.AppointmentDTO;
 import com.example.integradorV2.DTO.DentistDTO;
 import com.example.integradorV2.DTO.PatientDTO;
 import com.example.integradorV2.Entities.Address;
-import com.example.integradorV2.Entities.Dentist;
-import com.example.integradorV2.Entities.Patient;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jdk8.Jdk8Module;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.fasterxml.jackson.module.paramnames.ParameterNamesModule;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
@@ -31,7 +25,7 @@ class AppointmentServiceTest {
     public  DentistService dentistService;
     @Autowired
     public  PatientService patientService;
-/*
+
     @BeforeAll
     void data(){
         DentistDTO dentistDTO1 = dentistService.save(new DentistDTO(55555,"erick","vaernet"));
@@ -44,15 +38,8 @@ class AppointmentServiceTest {
                 new PatientDTO(1113,"Rick","Vnet","rv@mail.com", LocalDate.now(),
                         new Address("callefalsa",321)));
 
-        appointmentService.save(new AppointmentDTO(
-                mapPatientDTOToEntity(patientDTO1),
-                mapDentistDTOToEntity(dentistDTO1),
-                LocalDateTime.now()));
-        appointmentService.save(new AppointmentDTO(
-                mapPatientDTOToEntity(patientDTO2),
-                mapDentistDTOToEntity(dentistDTO2),
-                LocalDateTime.now()));
-
+        appointmentService.save(new AppointmentDTO(patientDTO1,dentistDTO1,LocalDateTime.now()));
+        appointmentService.save(new AppointmentDTO(patientDTO2,dentistDTO2,LocalDateTime.now()));
 
     }
 
@@ -61,14 +48,18 @@ class AppointmentServiceTest {
     void save() {
         AppointmentDTO appointmentDTO= appointmentService.save(
                 new AppointmentDTO(
-                        mapPatientDTOToEntity(
-                                patientService.save(new PatientDTO(5113,"Erick","Vnet","e@mail.com"
-                                                            , LocalDate.now(),new Address("callefalsa",23)))),
-                        mapDentistDTOToEntity(
-                                dentistService.save(new DentistDTO(6355,"rick","vaernet"))),
-                        LocalDateTime.now()
-                ));
-
+                    patientService.save(
+                            new PatientDTO(
+                                    5113,"Erick","Vnet","e@mail.com",LocalDate.now()
+                                    ,new Address("callefalsa",23)
+                            )
+                    ),
+                    dentistService.save(
+                            new DentistDTO(6355,"rick","vaernet")
+                    ),
+                    LocalDateTime.now()
+                )
+        );
         assertNotNull(appointmentDTO);
         assertTrue(appointmentDTO.getId()>0);
     }
@@ -90,12 +81,9 @@ class AppointmentServiceTest {
                 new DentistDTO(55761,"erick","vaernet"));
         LocalDateTime localDateTime = LocalDateTime.now();
 
-        Patient patient = mapPatientDTOToEntity(patientDTO);
-        Dentist dentist = mapDentistDTOToEntity(dentistDTO);
-
         //crear nuevo appointment y guardarlo
         AppointmentDTO appointmentDTO = appointmentService.save(
-                new AppointmentDTO( patient, dentist, localDateTime)
+                new AppointmentDTO( patientDTO, dentistDTO, localDateTime)
         );
         //Asignar nueva fecha/hora para el turno
         LocalDateTime localDateTimeUpdated = LocalDateTime.now().plusDays(1);
@@ -108,15 +96,19 @@ class AppointmentServiceTest {
         //Verificacion
         AppointmentDTO dto=appointmentService.findById(appointmentDTOId);
         assertEquals(dto.getDateTime().withNano(0),localDateTimeUpdated.withNano(0));
-        assertEquals(dto.getDentist(),dentist);
-        assertEquals(dto.getPatient(),patient);
+        assertEquals(dto.getDentist().toString(),dentistDTO.toString());
+        assertEquals(dto.getPatient().toString(),patientDTO.toString());
     }
 
     @Test
     void deleteById() {
         appointmentService.deleteById(1L);
-        AppointmentDTO dto=appointmentService.findById(1L);
-        assertNull(dto);
+        try {
+            AppointmentDTO dto=appointmentService.findById(1L);
+        }
+        catch (Exception e){
+            assertTrue(e.getMessage().contains("Appointment not found"));
+        }
     }
 
     @Test
@@ -140,14 +132,4 @@ class AppointmentServiceTest {
         assertTrue(appointmentDTOList.size()>0);
     }
 
-    //Mappers
-    private static Dentist mapDentistDTOToEntity(DentistDTO dentistDto){
-        return new ObjectMapper().convertValue(dentistDto, Dentist.class);
-    }
-    private static Patient mapPatientDTOToEntity(PatientDTO patientDTO){
-        return new ObjectMapper()
-                .registerModule(new ParameterNamesModule()).
-                registerModule(new Jdk8Module()).
-                registerModule(new JavaTimeModule()).convertValue(patientDTO, Patient.class);
-    }*/
 }
