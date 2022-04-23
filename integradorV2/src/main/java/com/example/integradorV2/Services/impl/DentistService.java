@@ -86,7 +86,6 @@ public class DentistService implements IDentistService {
 
     //Mappers
     private DentistDTO mapToDTO(Dentist dentist){
-        dentist.setPassword(null);
         return new ObjectMapper().convertValue(dentist, DentistDTO.class);
     }
     private Dentist mapToEntity(DentistDTO dentistDto){

@@ -57,9 +57,15 @@ public class AppointmentService implements IAppointmentService {
         if(appointmentDTO==null)
             throw new NullFieldsException("Need an appointment");
         AppointmentDTO appointmentToUpdate=findById(id);
+        Long patientId= appointmentDTO.getPatient().getId();
+        Long dentistId=appointmentDTO.getDentist().getId();
         //Asignaciones
-        if(appointmentDTO.getPatient()!=null) appointmentToUpdate.setPatient(appointmentDTO.getPatient());
-        if(appointmentDTO.getDentist()!=null) appointmentToUpdate.setDentist(appointmentDTO.getDentist());
+        if(appointmentDTO.getPatient()!=null)
+            appointmentToUpdate.setPatient(
+                    patientService.findById(patientId));
+        if(appointmentDTO.getDentist()!=null)
+            appointmentToUpdate.setDentist(
+                    dentistService.findById(dentistId));
         if(appointmentDTO.getDateTime()!=null) appointmentToUpdate.setDateTime(appointmentDTO.getDateTime());
         //Guardado
         appointmentRepository.save(mapToEntity(appointmentToUpdate));

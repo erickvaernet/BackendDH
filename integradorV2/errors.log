@@ -58,3 +58,25 @@ insert into users (id, last_name, name, password, role, username) values (defaul
 [2022-04-21 17-21-33] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='This User doesn't exist'}
 [2022-04-21 17-53-38] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='No enum constant com.example.integradorV2.Entities.Role.0; nested exception is java.lang.IllegalArgumentException: No enum constant com.example.integradorV2.Entities.Role.0'}
 [2022-04-21 17-54-38] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/users/login', errorMessage='Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling (through reference chain: com.example.integradorV2.Entities.Patient["entryDate"])'}
+[2022-04-23 13-14-52] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/1', errorMessage='Dentist not found'}
+[2022-04-23 13-17-41] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/0', errorMessage='Dentist id cannot be 0, null or negative'}
+[2022-04-23 13-17-53] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists/0', errorMessage='Dentist id cannot be 0, null or negative'}
+[2022-04-23 13-19-37] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Request method 'PUT' not supported'}
+[2022-04-23 13-19-42] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Content type 'text/plain;charset=UTF-8' not supported'}
+[2022-04-23 13-19-49] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Patient not found'}
+[2022-04-23 13-21-10] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments/3', errorMessage='Appointment not found'}
+[2022-04-23 13-23-09] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/patients', errorMessage='not-null property references a null or transient value : com.example.integradorV2.Entities.Patient.password; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Patient.password'}
+[2022-04-23 13-23-47] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/patients', errorMessage='not-null property references a null or transient value : com.example.integradorV2.Entities.Patient.role; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Patient.role'}
+[2022-04-23 13-31-49] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Patient not found'}
+[2022-04-23 13-32-02] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Dentist not found'}
+[2022-04-23 13-34-51] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/patients/1', errorMessage='Patient not found'}
+[2022-04-23 13-35-08] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/patients', errorMessage='could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_R43AF9AP4EDM43MMTQ01ODDJ6_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 4 */ 'patient1' )"; SQL statement:
+insert into users (id, last_name, name, password, role, username) values (default, ?, ?, ?, ?, ?) [23505-206]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
+[2022-04-23 13-37-19] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Patient not found'}
+[2022-04-23 13-37-25] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.password; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.example.integradorV2.Entities.Dentist.password'}
+[2022-04-23 16-44-40] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments/3', errorMessage='Appointment not found'}
+[2022-04-23 16-56-12] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_R43AF9AP4EDM43MMTQ01ODDJ6_INDEX_4 ON PUBLIC.USERS(USERNAME NULLS FIRST) VALUES ( /* 4 */ 'dentist2' )"; SQL statement:
+insert into users (id, last_name, name, password, role, username) values (default, ?, ?, ?, ?, ?) [23505-206]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
+[2022-04-23 16-56-26] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3V8Q4EESMVOITX275Q75SVU54_INDEX_6 ON PUBLIC.DENTISTS(LICENSE_NUMBER NULLS FIRST) VALUES ( /* 4 */ 9994 )"; SQL statement:
+insert into dentists (license_number, id) values (?, ?) [23505-206]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
+[2022-04-23 17-04-55] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Request method 'PUT' not supported'}

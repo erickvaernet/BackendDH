@@ -30,6 +30,7 @@ public class DentistController {
     @GetMapping("/{id}")
     public ResponseEntity<DentistDTO> getDentist(@PathVariable("id") Long id){
         DentistDTO dto=dentistService.findById(id);
+        dto.setPassword(null);
         return ResponseEntity.ok(dto);
     }
 
@@ -44,10 +45,11 @@ public class DentistController {
     }
 
     @PostMapping
-    public ResponseEntity<String> saveDentist(@RequestBody DentistDTO newDentist){
+    public ResponseEntity<DentistDTO> saveDentist(@RequestBody DentistDTO newDentist){
         newDentist.setRole(Role.DENTIST);
-        dentistService.save(newDentist);
-        return ResponseEntity.ok("Dentist created");
+        DentistDTO dto=dentistService.save(newDentist);
+        dto.setPassword(null);
+        return ResponseEntity.ok(dto);
     }
 
     @DeleteMapping("/{id}")
@@ -56,7 +58,7 @@ public class DentistController {
 
         if(dentistService.findById(id)!=null){
             dentistService.deleteById(id);
-            response=ResponseEntity.ok("Dentista eliminado");
+            response=ResponseEntity.ok("Dentist deleted");
         } else {
             response=ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
@@ -67,24 +69,10 @@ public class DentistController {
     public ResponseEntity<DentistDTO> updateOdontologo(@PathVariable Long id,@RequestBody DentistDTO dentist){
         System.out.println(id);
         System.out.println(dentist.toString());
-        try {
-            return ResponseEntity.ok(dentistService.update(id,dentist));
-        }catch (Exception e){
-            System.err.println(e.getMessage());
-            e.printStackTrace();
-        }
-        return  null;
-    }
-
-    //mappers
-    private DentistDTO mapRegisterDentistToDentistDTO(RegisterDentistDTO registerDentistDTO){
-        return new ObjectMapper().convertValue(registerDentistDTO, DentistDTO.class);
-    }
-    private UserDTO mapRegisterDentistToUserDTO(RegisterDentistDTO registerDentistDTO){
-        return new ObjectMapper().convertValue(registerDentistDTO, UserDTO.class);
-    }
-    private Dentist mapToEntity(DentistDTO dentistDto){
-        return new ObjectMapper().convertValue(dentistDto, Dentist.class);
+        dentistService.update(id,dentist);
+        DentistDTO dto= dentistService.findById(id);
+        dto.setPassword(null);
+        return ResponseEntity.ok(dto);
     }
 
 }

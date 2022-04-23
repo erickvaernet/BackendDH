@@ -31,6 +31,7 @@ public class PatientService implements IPatientService {
     public PatientDTO save(PatientDTO patientDTO) {
         //userService.save(pa);
         Patient newPatient= mapToEntity(patientDTO);
+        newPatient.setRole(Role.PATIENT);
         newPatient=patientRepository.save(newPatient);
         return mapToDTO(newPatient);
     }
@@ -81,6 +82,7 @@ public class PatientService implements IPatientService {
                 registerModule(new Jdk8Module()).
                 registerModule(new JavaTimeModule()).convertValue(patient, PatientDTO.class);
     }
+
     private Patient mapToEntity(PatientDTO patientDTO){
         return new ObjectMapper()
                 .registerModule(new ParameterNamesModule()).
