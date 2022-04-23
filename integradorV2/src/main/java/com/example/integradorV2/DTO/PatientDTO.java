@@ -29,4 +29,20 @@ public class PatientDTO {
     private LocalDate entryDate;
     private Address address;
     private Set<Appointment> appointments;
+
+
+    public PatientDTO(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public PatientDTO(Integer dni, String username, String password, String name, String lastName, LocalDate entryDate, Address address) {
+        this.dni = dni;
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.lastName = lastName;
+        this.entryDate = entryDate;
+        this.address = address;
+    }
 }

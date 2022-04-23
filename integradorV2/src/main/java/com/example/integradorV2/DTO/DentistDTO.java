@@ -22,4 +22,11 @@ public class DentistDTO {
     private Integer licenseNumber;
     private Set<Appointment> appointments;
 
+    public DentistDTO(String username, String password, String name, String lastName, Integer licenseNumber) {
+        this.username = username;
+        this.password = password;
+        this.name = name;
+        this.lastName = lastName;
+        this.licenseNumber = licenseNumber;
+    }
 }

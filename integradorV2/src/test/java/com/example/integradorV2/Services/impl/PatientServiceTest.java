@@ -14,17 +14,16 @@ import static org.junit.jupiter.api.Assertions.*;
 
 @SpringBootTest
 class PatientServiceTest {
-/*
+
     @Autowired
     public PatientService patientService;
 
     @Test
     void save() {
-        PatientDTO patientDTO= new PatientDTO();
+        PatientDTO patientDTO= new PatientDTO("patient2","patient2");
         patientDTO.setDni(415612);
         patientDTO.setName("Erick");
         patientDTO.setLastName("Vaernet");
-        patientDTO.setEmail("erick@mail.com");
         patientDTO.setEntryDate(LocalDate.now());
         patientDTO.setAddress(new Address("Alvear",1653));
         patientDTO=patientService.save(patientDTO);
@@ -34,11 +33,10 @@ class PatientServiceTest {
 
     @Test
     void findById() {
-        PatientDTO patientDTO= new PatientDTO();
+        PatientDTO patientDTO= new PatientDTO("patient3","patient3");
         patientDTO.setDni(52112);
         patientDTO.setName("Erick");
         patientDTO.setLastName("Vaernet");
-        patientDTO.setEmail("erickk@mail.com");
         patientDTO.setEntryDate(LocalDate.now());
         patientDTO.setAddress(new Address("Alvear",1653));
         patientDTO=patientService.save(patientDTO);
@@ -58,11 +56,10 @@ class PatientServiceTest {
         Address address = new Address("Alvear",1653);
 
         //crear nuevo dentista y guardarlo
-        PatientDTO patientDTO = new PatientDTO();
+        PatientDTO patientDTO= new PatientDTO("patient4","patient4");
         patientDTO.setDni(dni);
         patientDTO.setName(name);
         patientDTO.setLastName(lastName);
-        patientDTO.setEmail(email);
         patientDTO.setEntryDate(entryDate);
         patientDTO.setAddress(address);
         patientDTO=patientService.save(patientDTO);
@@ -80,7 +77,6 @@ class PatientServiceTest {
         assertEquals(dt.getName(),newName);
         assertEquals(dt.getLastName(),lastName);
         assertEquals(dt.getDni(),dni);
-        assertEquals(dt.getEmail(),email);
         assertEquals(dt.getEntryDate(),entryDate);
         assertEquals(dt.getAddress().getStreet(),address.getStreet());
         assertEquals(dt.getAddress().getNumber(),address.getNumber());
@@ -88,11 +84,10 @@ class PatientServiceTest {
 
     @Test
     void deleteById() {
-        PatientDTO patientDTO= new PatientDTO();
+        PatientDTO patientDTO= new PatientDTO("patient5","patient5");
         patientDTO.setDni(56112);
         patientDTO.setName("Erickkk");
         patientDTO.setLastName("Vaaernet");
-        patientDTO.setEmail("eric2kk@mail.com");
         patientDTO.setEntryDate(LocalDate.now());
         patientDTO.setAddress(new Address("Alvear",133));
         PatientDTO ptWithId= patientService.save(patientDTO);
@@ -108,16 +103,15 @@ class PatientServiceTest {
 
     @Test
     void findAll() {
-        PatientDTO patientDTO= new PatientDTO();
+        PatientDTO patientDTO= new PatientDTO("patient6","patient6");
         patientDTO.setDni(561152);
         patientDTO.setName("Erkk");
         patientDTO.setLastName("Vernet");
-        patientDTO.setEmail("erkk@mail.com");
         patientDTO.setEntryDate(LocalDate.now());
         patientDTO.setAddress(new Address("Alvear",173));
         patientService.save(patientDTO);
         List<PatientDTO> patientDTOList=patientService.findAll();
         assertNotNull(patientDTOList);
         assertTrue(patientDTOList.size()>0);
-    }*/
+    }
 }

@@ -1,10 +1,8 @@
 package com.example.integradorV2.Services.impl;
 
 import com.example.integradorV2.DTO.DentistDTO;
-import com.example.integradorV2.DTO.RegisterUserDTO;
 import com.example.integradorV2.Entities.Dentist;
 import com.example.integradorV2.Entities.Role;
-import com.example.integradorV2.Entities.User;
 import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Exceptions.InvalidIdException;
 import com.example.integradorV2.Exceptions.NullFieldsException;
@@ -13,8 +11,6 @@ import com.example.integradorV2.Persistence.IUserRepository;
 import com.example.integradorV2.Services.IDentistService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

@@ -1,12 +1,10 @@
 package com.example.integradorV2.Controllers;
 
 import com.example.integradorV2.DTO.AppointmentDTO;
-import com.example.integradorV2.Exceptions.EntityNotFoundException;
 import com.example.integradorV2.Services.impl.AppointmentService;
 import com.example.integradorV2.Services.impl.DentistService;
 import com.example.integradorV2.Services.impl.PatientService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
