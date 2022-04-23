@@ -80,3 +80,4 @@ insert into users (id, last_name, name, password, role, username) values (defaul
 [2022-04-23 16-56-26] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/dentists', errorMessage='could not execute statement; SQL [n/a]; constraint ["PUBLIC.UK_3V8Q4EESMVOITX275Q75SVU54_INDEX_6 ON PUBLIC.DENTISTS(LICENSE_NUMBER NULLS FIRST) VALUES ( /* 4 */ 9994 )"; SQL statement:
 insert into dentists (license_number, id) values (?, ?) [23505-206]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement'}
 [2022-04-23 17-04-55] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments', errorMessage='Request method 'PUT' not supported'}
+[2022-04-23 18-06-03] [ ERROR] [GlobalExceptionHandler:41] Error {uri='/appointments/1', errorMessage='Cannot invoke "com.example.integradorV2.DTO.PatientDTO.getId()" because the return value of "com.example.integradorV2.DTO.AppointmentDTO.getPatient()" is null'}

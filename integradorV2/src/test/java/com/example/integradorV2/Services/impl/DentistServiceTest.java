@@ -16,7 +16,6 @@ class DentistServiceTest {
     @Autowired
     public DentistService dentistService;
 
-
     @Test
     void save() {
 
