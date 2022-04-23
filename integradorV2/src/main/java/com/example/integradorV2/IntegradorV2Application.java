@@ -16,8 +16,6 @@ public class IntegradorV2Application {
 		SpringApplication.run(IntegradorV2Application.class, args);
 		firstData();
 	}
-
-
 	private static void firstData(){
 		try {
 			Class.forName("org.h2.Driver").newInstance();
@@ -31,6 +29,7 @@ public class IntegradorV2Application {
 			stm.close();
 			cn.close();
 		} catch (Exception e) {
+			System.err.println("Verificar Conexion a base de datos, probablemente la contraseña o usuario sea incorrecta");
 			e.printStackTrace();
 		}
 	}

@@ -41,7 +41,7 @@ class PatientServiceTest {
         patientDTO.setAddress(new Address("Alvear",1653));
         patientDTO=patientService.save(patientDTO);
         assertNotNull(patientDTO);
-        PatientDTO dt=patientService.findById(1L);
+        PatientDTO dt=patientService.findById(patientDTO.getId());
         assertNotNull(dt);
     }
 

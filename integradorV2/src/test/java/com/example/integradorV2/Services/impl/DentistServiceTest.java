@@ -28,7 +28,7 @@ class DentistServiceTest {
         DentistDTO dentistDTO= new DentistDTO("Rick","Sanchez","Rick","Sanchez",513);
         dentistDTO=dentistService.save(dentistDTO);
         assertNotNull(dentistDTO);
-        DentistDTO dt=dentistService.findById(1L);
+        DentistDTO dt=dentistService.findById(dentistDTO.getId());
         assertNotNull(dt);
     }
 
