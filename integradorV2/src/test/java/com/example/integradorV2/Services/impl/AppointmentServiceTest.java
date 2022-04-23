@@ -19,7 +19,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 class AppointmentServiceTest {
-    /*
+
     @Autowired
     public  AppointmentService appointmentService;
     @Autowired
@@ -29,14 +29,14 @@ class AppointmentServiceTest {
 
     @BeforeAll
     void data(){
-        DentistDTO dentistDTO1 = dentistService.save(new DentistDTO(55555,"erick","vaernet"));
+        DentistDTO dentistDTO1 = dentistService.save(new DentistDTO("asdas","nbmnbv","erick","vaernet",55555));
         DentistDTO dentistDTO2 = dentistService.save(
-                new DentistDTO(65555,"rick","vaernet"));
+                new DentistDTO("ricky","vaernet","rick","vaernet",65555));
         PatientDTO patientDTO1 = patientService.save(
-                new PatientDTO(1113,"Erick","Vnet","e@mail.com", LocalDate.now(),
+                new PatientDTO(1113,"24ick","Vnet","Erick","Vnet", LocalDate.now(),
                         new Address("callefalsa",123)));
         PatientDTO patientDTO2 = patientService.save(
-                new PatientDTO(1113,"Rick","Vnet","rv@mail.com", LocalDate.now(),
+                new PatientDTO(1113,"5t5Rick","Vnet","Rick","Vnet", LocalDate.now(),
                         new Address("callefalsa",321)));
 
         appointmentService.save(new AppointmentDTO(patientDTO1,dentistDTO1,LocalDateTime.now()));
@@ -51,12 +51,12 @@ class AppointmentServiceTest {
                 new AppointmentDTO(
                     patientService.save(
                             new PatientDTO(
-                                    5113,"Erick","Vnet","e@mail.com",LocalDate.now()
+                                    5113,"894Erick","Vnet","Erick","Vnet",LocalDate.now()
                                     ,new Address("callefalsa",23)
                             )
                     ),
                     dentistService.save(
-                            new DentistDTO(6355,"rick","vaernet")
+                            new DentistDTO("924t2ck","vaernet2","rick","vaernet",6355)
                     ),
                     LocalDateTime.now()
                 )
@@ -76,10 +76,10 @@ class AppointmentServiceTest {
     void update() {
         //datos
         PatientDTO patientDTO = patientService.save(
-                new PatientDTO(11100,"Rick","Vnet","rv@mail.com", LocalDate.now(),
+                new PatientDTO(11100,"Ri352c18k","Vnet","Rick","Vnet", LocalDate.now(),
                         new Address("callefalsa",1021)));
         DentistDTO dentistDTO = dentistService.save(
-                new DentistDTO(55761,"erick","vaernet"));
+                new DentistDTO("552ds","afa3","erick","vaernet",55761));
         LocalDateTime localDateTime = LocalDateTime.now();
 
         //crear nuevo appointment y guardarlo
@@ -102,17 +102,6 @@ class AppointmentServiceTest {
     }
 
     @Test
-    void deleteById() {
-        appointmentService.deleteById(1L);
-        try {
-            AppointmentDTO dto=appointmentService.findById(1L);
-        }
-        catch (Exception e){
-            assertTrue(e.getMessage().contains("Appointment not found"));
-        }
-    }
-
-    @Test
     void findAll() {
         List<AppointmentDTO> appointmentDTOList=appointmentService.findAll();
         assertNotNull(appointmentDTOList);
@@ -121,16 +110,59 @@ class AppointmentServiceTest {
 
     @Test
     void findByDentistId() {
-        List<AppointmentDTO> appointmentDTOList=appointmentService.findByDentistId(1L);
+        DentistDTO dentistDTO= dentistService.save(new DentistDTO("924232c7k","vaernet2","rick","vaernet",11103));
+        AppointmentDTO appointmentDTO= appointmentService.save(
+                new AppointmentDTO(
+                        patientService.save(
+                                new PatientDTO(
+                                        51132,"894Er5ick","Vnet","Erick","Vnet",LocalDate.now()
+                                        ,new Address("callefalsa",232)
+                                )
+                        ),
+                        dentistService.save(
+                                dentistDTO
+                        ),
+                        LocalDateTime.now()
+                )
+        );
+        List<AppointmentDTO> appointmentDTOList=appointmentService.findByDentistId(dentistDTO.getId());
         assertNotNull(appointmentDTOList);
         assertTrue(appointmentDTOList.size()>0);
     }
 
     @Test
     void findByPatientId() {
-        List<AppointmentDTO> appointmentDTOList=appointmentService.findByPatientId(1L);
+        DentistDTO dentistDTO= new DentistDTO("920488k","vaernet2","rick","vaernet",100006);
+        PatientDTO patientDTO= patientService.save(new PatientDTO(
+                51132,"4i04fjak","Vnet","Erick","Vnet",LocalDate.now()
+                ,new Address("callefalsa",00232)
+        ));
+        AppointmentDTO appointmentDTO= appointmentService.save(
+                new AppointmentDTO(
+                        patientService.save(
+                                patientDTO
+                        ),
+                        dentistService.save(
+                                dentistDTO
+                        ),
+                        LocalDateTime.now()
+                )
+        );
+        List<AppointmentDTO> appointmentDTOList=appointmentService.findByPatientId(patientDTO.getId());
         assertNotNull(appointmentDTOList);
         assertTrue(appointmentDTOList.size()>0);
-    }*/
+    }
+    @Test
+    void deleteById() {
+        appointmentService.deleteById(1L);
+        AppointmentDTO dto=null;
+        try {
+            dto=appointmentService.findById(1L);
+        }
+        catch (Exception e){
+            assertTrue(e.getMessage().contains("Appointment not found"));
+        }
+        assertTrue(dto==null);
+    }
 
 }
